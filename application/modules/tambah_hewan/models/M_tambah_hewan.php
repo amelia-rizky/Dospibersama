@@ -147,7 +147,6 @@ class M_tambah_hewan extends CI_Model {
 
 
 
-
 		// table makanan
 
 		$jenismakanan	= $this->input->post('jenis_makanan');

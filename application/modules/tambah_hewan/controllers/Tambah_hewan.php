@@ -10,7 +10,6 @@ class Tambah_hewan extends MX_Controller {
 		 $this->load->model('m_tambah_hewan');
 
 	}
-
 	
 	// index
 	function index()
