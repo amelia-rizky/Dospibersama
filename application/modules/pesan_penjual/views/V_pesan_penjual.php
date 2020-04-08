@@ -20,19 +20,64 @@
                                     <img src="assets/img/avatar/avatar-1.jpg" alt="comments-user">
                                 </a>
                             </div>
-                             <?php foreach($tampil as $pesanpenjual) {
-                                    $id = $pesanpenjual->id_pesan;
-                                ?>
+
                             <div class="comment-content">
                                 <div class="comment-meta">
-                                    <h6>
+                                <h6>
                                         Dicky Dharmawan
                                         <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                     </h6>
                                 </div>
-                                <P><?php echo $pesanpenjual->isi_pesan ?></P>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
                             </div>
-                            <?php } ?>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-author">
+                                <a href="#">
+                                    <img src="assets/img/avatar/avatar-2.jpg" alt="comments-user">
+                                </a>
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-meta">
+                                    <h6>
+                                        Ayu Febryanti Lidya Ningrum
+                                        <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
+                                    </h6>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-author">
+                                <a href="#">
+                                    <img src="assets/img/avatar/avatar-3.jpg" alt="comments-user">
+                                </a>
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-meta">
+                                    <h6>
+                                        Wahyu Rahmadani
+                                        <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
+                                    </h6>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                            </div>
+                        </div>
+                        <div class="comment comment-b">
+                            <div class="comment-author">
+                                <a href="#">
+                                    <img src="assets/img/avatar/avatar-4.jpg" alt="comments-user">
+                                </a>
+                            </div>
+                            <div class="comment-content b-none">
+                                <div class="comment-meta">
+                                    <h6>
+                                        Amelia Rizky Utami
+                                        <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
+                                    </h6>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +95,7 @@
 <div class="modal fade" id="jajal" style="top: 15%;">
 <div class="modal-dialog modal-md">
 <div class="modal-content">
-<form action="<?php echo base_url().'pesan_penjual/balas'?>" method="post" enctype="multipart/form-data">
+
 
 <!-- Modal Header -->
 <div class="modal-header">

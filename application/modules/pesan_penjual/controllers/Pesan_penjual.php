@@ -33,7 +33,7 @@ class Pesan_penjual extends MX_Controller {
 	}
 
 	function hapus($id){
-		$this->m_pesan_penjual->hapus($id)
+		$this->m_pesan_penjual->hapus($id);
 	}
 
 }
