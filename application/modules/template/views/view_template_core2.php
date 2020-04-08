@@ -69,7 +69,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand logo pad-0" href="<?php echo base_url('halaman_penjual'); ?>">
-                <img src="assets/img/avatar/sapi.png" alt="logo">
+                <img src="assets/img/avatar/black-logo.png " alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
