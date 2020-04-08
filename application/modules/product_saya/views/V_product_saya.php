@@ -18,8 +18,8 @@ foreach ($tampil as $rey) {
     $id = $rey->id_datahewan;
 
  ?>
-
-         <?= form_open_multipart('product_saya/edit');  ?>      
+  <?= form_open_multipart('product_saya/edit_hewan');  ?>  
+      
                                 <tbody>
                                 <tr class="responsive-table">
                                     <td class="listing-photoo">
@@ -27,10 +27,11 @@ foreach ($tampil as $rey) {
                                     </td>
                                     <td class="title-container">
                                         <h2><a href="#"><?php echo $rey->nama_pemilik ?></a></h2>
+                                        <input type="hidden" name="id_datahewan" value="<?php echo $rey->id_datahewan ?>">
                                         <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> 3214 Sempu Banyuwangi, </h5>
                                         <h6 class="table-property-price">Rp. <?php echo $rey->harga_hewan ?></h6>
                                     </td>
-                                    <td class="expire-date">6.01.2018</td>
+                                    <td class="expire-date"><?php echo $rey->tanggal_tambah?></td>
                                     <td class="action">
                                         <a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style="margin-left: -20%;"><i class="fa fa-pencil"></i> Edit</a>
                                         <a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?>" style="margin-left: -20%;"><i class="fa fa-remove" ></i> Hapus</a>
@@ -42,8 +43,7 @@ foreach ($tampil as $rey) {
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
-
-      
+       
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Ubah Produk</h4>
@@ -56,6 +56,7 @@ foreach ($tampil as $rey) {
                     <div class="form-group">
                         <label class="control-label">Nama Pemilik</label>
                         <input type="text" name="nama_pemilik" class="form-control"  value="<?php echo $rey->nama_pemilik; ?>">
+                        <input type="hidden" name="id_datahewan" value="<?php echo $rey->id_datahewan ?>">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -121,9 +122,16 @@ foreach ($tampil as $rey) {
                         
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label">Tanggal</label>
+                        <input type="date" name="tanggal_tambah" class="form-control"  value="<?php echo $rey->tanggal_tambah; ?>">
+                        
+                </div>
+                </div>
                  <div class="col-sm-6">
                     <div class="form-group">
-                        <label class="control-label">kode pos</label>
+                        <label class="control-label">Kode Pos</label>
                         <input type="text" name="kode_pos" class="form-control"  value="<?php echo $rey->kode_pos; ?>">   
                     </div>
                 </div><br><br><br>
@@ -177,8 +185,8 @@ foreach ($tampil as $rey) {
         <div class="modal-footer">
           <button class="btn btn-primary">Simpan Perubahan</button>
         </div>
+        <?= form_close(); ?>
       </div>
-      <?= form_close(); ?>
     </div>
   </div>
 </div>   
@@ -198,8 +206,8 @@ foreach ($tampil as $rey) {
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
-          <a class="btn btn-success" href="<?php echo base_url('product_saya/hapus/'. $rey->id_datahewan) ?>">batal</a>
+          <a type="button" class="btn btn-danger" href="<?php echo base_url('product_saya/hapus/'. $rey->id_datahewan) ?>" data-dismiss="modal">Hapus</a>
+          <!-- <a class="btn btn-success">Batal</a> -->
         </div>      
         </div>
         <!-- Modal footer -->
