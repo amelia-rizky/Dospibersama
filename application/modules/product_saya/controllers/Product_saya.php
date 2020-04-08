@@ -27,9 +27,9 @@ class Product_saya extends MX_Controller {
 		echo Modules::run('template/tampilCore2', $data);
 	}
 
-	function edit(){
-		$this->m_product_saya->edit();
-		redirect('product_saya');
+	function edit_hewan(){
+		$this->m_product_saya->edit_hewan();
+		// redirect('product_saya');
 	}
 
 	function hapus($id_datahewan)
