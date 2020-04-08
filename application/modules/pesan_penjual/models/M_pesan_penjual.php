@@ -21,10 +21,6 @@ class M_pesan_penjual extends CI_Model {
 			'waktu'			=> $waktu,
 		);
 		 $this->db->where('id_pesan',$id_pesan)->uploat('tb_pesan',$data);
-	}
-
-	function hapus($id){
-		$this->db->where('id_pesan',$id_pesan)->delete('tb_pesan',$data);
-	}
+	
 
 }
