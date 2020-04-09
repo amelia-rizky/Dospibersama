@@ -5,7 +5,7 @@ class M_cara_pembelian_penjual extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('data_hewan')->result();
+		return $this->db->get('tata_cara')->result();
     }
     
 }

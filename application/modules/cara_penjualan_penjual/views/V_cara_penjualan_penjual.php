@@ -4,8 +4,11 @@
         <div class="breadcrumb-areas">
             <h1>Cara Penjualan</h1>
             <ul class="breadcrumbs">
-                <li><a href="index-3penjual.html">Home</a></li>
+                <li><a href="<?php echo base_url('halaman_penjual');?>"class="nav-link">Home</a></li>
                 <li class="active">Cara Penjualan</li>
+                <?php foreach ($tampil as $carapenjualanpenjual) {
+            $id = $carapenjualanpenjual->id_tatacara;
+            ?>
             </ul>
         </div>
     </div>
@@ -17,38 +20,17 @@
                 <div class="col-md-6 sd">
                     <div class="card" style="background-color: #ffffff; padding: 5px; border: 1px solid black; box-shadow: 3px 3px 3px 3px rgba(38, 38, 38,.3);">
                         <div class="card-body" style="height: 850px;">
-                            <h4 class="heading" style="color: #000000;">Cara penjualan</h4>
-                        <p>Cara penjualan hewan ternak di DOSPI:</p>
-                        <p>1. Lakukan login/registrasi sebagai penjual.
-                            <br>2. Masuk ke menu jual ternakmu disini.
-                            <br>3. Pilih gambar hewan yang akan dijual dan menuliskan deskripsi hewan yang terdiri dari :
-                        </p>
-                        <p>-Harga,
-                           <br>-Nama/jenis hewan,
-                           <br>-Jenis kelamin hewan,
-                           <br>-Panjang lebar dan tinggi hewan,
-                           <br>-Berat hewan,
-                           <br>-Jenis makanan yang dimakan hewan (combor/tidak),
-                           <br>-Warna hewan,
-                           <br>-Menyertakan 5 foto sapi/kambing yang akan di jual (2 Foto Depan Belakang Sapi/Kambing, 2 Foto Samping Kanan Samping Kiri Sapi/Kambing, 1 Foto Makanan Ternak Yang Biasa Hewan Itu Makan).
-                        </p>
-                        <p>4. Menyertakan alamat lengkap tentang keberadaan sapi/kambing ( Disediakan maps ).
-                        <br>5. Setelah data hewan sudah terisi klik jual ternakmu disini, dan anda bisa melihat Daftar Hewan yang anda jual  di halaman Produk saya dan anda juga bisa melihat hewan anda di shop Dospi.
-                        </p>
-                        <br><br><br><br>
+                            <center><h4 class="heading" style="color: #000000;"><?php echo $carapenjualanpenjual->judulpenjualan?></h4></center>
+                        <p><?php echo $carapenjualanpenjual->penjualan?></p>
                          </div>
                      </div>
                 </div>
             <div class="col-md-6 sd">
                 <div class="card" style="background-color: #ffffff; padding: 5px; border: 1px solid black; box-shadow: 3px 3px 3px 3px rgba(38, 38, 38,.3);">
                     <div class="card-body" style="height: 450px;">
-                        <h4 class="heading" style="color: #000000;">Syarat dan Ketentuan</h4>
-                        <p>Adapun syarat dan ketentuan terkait dengan pembeliannya adalah sebagai berikut :</p>
-                        <li> Apabila harga sapi lebih dari 25 juta pembeli harus mengirimkan 27%  Dari total harga sebagai Dp</li> 
-                        <li> Apabila harga sapi dibawah 25 Juta pembeli harus mengirimkan 21%  dari total harga sebagai Dp</li> 
-                        <li> Apabila harga kambing diatas 5 juta maka pembeli harus mengirim dp 16% dari total harga sebagai Dp</li>
-                        <li> Apabila harga kambing dibawah 5 juta maka pembeli harus mengirim dp 10.5% dari total harga sebagai Dp</li>
-                        <li> Untuk pengiriman hewan tersebut menjadi kewajiban dari pembeli</li>
+                        <center><h4 class="heading" style="color: #000000;"><?php echo $carapenjualanpenjual->judulsyarat?></h4></center>
+                        <p><?php echo $carapenjualanpenjual->syaratketentuan?></p>
+                    <?php } ?>
                     </div>
                  </div>
             </div>
