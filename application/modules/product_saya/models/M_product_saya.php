@@ -22,9 +22,9 @@ class M_product_saya extends CI_Model {
 	function edit_hewan()
 	{
 		// Table Tambah Hewan
-		$id_datahewan	=$this->input->post('id_datahewan');
+		$id_datahewan	= $this->input->post('id_datahewan');
 
-		$jenishewan		= $this->input->post('jenis_hewan');
+		// $jenishewan		= $this->input->post('jenis_hewan');
 		$tanggaltambah	= $this->input->post('tanggal_tambah');
 		$ukuranhewan	= $this->input->post('ukuran_hewan');
 		$berathewan		= $this->input->post('berat_hewan');
@@ -51,7 +51,8 @@ class M_product_saya extends CI_Model {
 			'kode_pos'			=> $kodepos,
 			'tanggal_tambah'	=> $tanggaltambah
 		 );
-		$this->db->insert('data_hewan',$data_hewan);
+		$this->db->update('data_hewan',$data_hewan);
+		
 
 
 		// Table Gambar Hewan
@@ -67,6 +68,7 @@ class M_product_saya extends CI_Model {
 		// $nmfile = time().$_FILES["file_name"]['name'];
 		
 		$this->upload->initialize($config);
+
 		$this->upload->do_upload('gambar1');
 		$gbr1 = $this->upload->data();
 
@@ -88,38 +90,38 @@ class M_product_saya extends CI_Model {
 					
 				
 			);
-		   $this->db->insert('gambar_hewan', $data1);
+		   $this->db->update('gambar_hewan', $data1);
 
 		   	$data2 = array(
 				'gambar' 			=> $gbr2['file_name'],
 					
 				
 			);
-		   $this->db->insert('gambar_hewan', $data2);
+		   $this->db->update('gambar_hewan', $data2);
 
 			$data3 = array(
 				'gambar' 			=> $gbr3['file_name'],
 					
 				
 			);
-		   $this->db->insert('gambar_hewan', $data3);
+		   $this->db->update('gambar_hewan', $data3);
 
 		   	$data4 = array(
 				'gambar' 			=> $gbr4['file_name'],
 					
 				
 			);
-		   $this->db->insert('gambar_hewan', $data4);
+		   $this->db->update('gambar_hewan', $data4);
 
 		   	$data5 = array(
 				'gambar' 			=> $gbr5['file_name'],
 					
 				
 			);
-		   $this->db->insert('gambar_hewan', $data5);
+		   $this->db->update('gambar_hewan', $data5);
 
 
-
+		   $this->db->where('id_datahewan',$id_datahewan)->update('data_hewan',$data_hewan);
 
 		// table kategori
 
@@ -150,19 +152,19 @@ class M_product_saya extends CI_Model {
 
 		// table makanan
 
-		// $jenismakanan	= $this->input->post('jenis_makanan');
+		$jenismakanan	= $this->input->post('jenis_makanan');
 
-		// $makanan =array(
-		// 	'nama_makanan'	=> $jenismakanan
-		// );
-		// $this->db->insert('tb_makanan',$makanan);
-
+		$makanan =array(
+			'nama_makanan'	=> $jenismakanan
+		);
+		$this->db->update('tb_makanan',$makanan);
+}
 		function hapus($id_datahewan)
 		{
 			$this->db->where('id_datahewan', $id_datahewan)->delete('data_hewan');
 		}
 
-	}
+	
 
 
 

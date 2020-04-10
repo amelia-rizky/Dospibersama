@@ -15,10 +15,10 @@
                             <table class="manage-table">
                                 <?php 
 foreach ($tampil as $rey) {
-    $id = $rey->id_datahewan;
+    $id_datahewan = $rey->id_datahewan;
 
  ?>
-  <?= form_open_multipart('product_saya/edit_hewan');  ?>  
+ 
       
                                 <tbody>
                                 <tr class="responsive-table">
@@ -26,8 +26,8 @@ foreach ($tampil as $rey) {
                                         <img src="assets/img/properties/properties-1.jpg" alt="listing-photo" class="img-fluid">
                                     </td>
                                     <td class="title-container">
-                                        <h2><a href="#"><?php echo $rey->nama_pemilik ?></a></h2>
                                         <input type="hidden" name="id_datahewan" value="<?php echo $rey->id_datahewan ?>">
+                                        <h2><a href=""><?php echo $rey->nama_pemilik ?></a></h2>
                                         <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> 3214 Sempu Banyuwangi, </h5>
                                         <h6 class="table-property-price">Rp. <?php echo $rey->harga_hewan ?></h6>
                                     </td>
@@ -43,7 +43,7 @@ foreach ($tampil as $rey) {
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
-       
+        <?= form_open_multipart('product_saya/edit_hewan');  ?>  
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Ubah Produk</h4>
@@ -55,8 +55,8 @@ foreach ($tampil as $rey) {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="control-label">Nama Pemilik</label>
-                        <input type="text" name="nama_pemilik" class="form-control"  value="<?php echo $rey->nama_pemilik; ?>">
                         <input type="hidden" name="id_datahewan" value="<?php echo $rey->id_datahewan ?>">
+                        <input type="text" name="nama_pemilik" class="form-control"  value="<?php echo $rey->nama_pemilik; ?>">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -104,7 +104,7 @@ foreach ($tampil as $rey) {
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label class="control-label">Jenis Makanan</label>
-                        <input type="text" name="" class="form-control" value="">
+                        <input type="text" name="nama_makanan" class="form-control" value="">
                         
                     </div>
                 </div>

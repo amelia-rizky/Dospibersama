@@ -35,7 +35,7 @@ class Product_saya extends MX_Controller {
 	function hapus($id_datahewan)
 	{
 	$this->m_product_saya->hapus($id_datahewan);
-	 redirect('product_saya');
+	//  redirect('product_saya');
 
 }
 	}
