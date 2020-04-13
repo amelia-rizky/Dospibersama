@@ -79,6 +79,9 @@
                     <div class="tabbing tabbing-box mb-40">
                         <ul class="nav nav-tabs" id="carTab" role="tablist">
                             <li class="nav-item">
+                                <?php foreach($tampil as $shopdetail) {
+                                    
+                                ?>
                                 <a class="nav-link active show" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="false">Deskripsi</a>
                             </li>
                             <li class="nav-item">
@@ -94,8 +97,7 @@
                                     <h3 class="heading-2">
                                         Sapi
                                     </h3>
-                                    <p>Sapi adalah hewan ternak anggota suku Bovidae dan anak suku Bovinae. Sapi yang telah dikebiri dan biasanya digunakan untuk membajak sawah dinamakan lembu. Sapi dipelihara terutama untuk dimanfaatkan susu dan dagingnya sebagai pangan manusia. Hasil sampingannya seperti kulit, jeroan, tanduk, dan kotorannya juga dimanfaatkan untuk berbagai keperluan manusia. Di sejumlah tempat, sapi juga dipakai sebagai penggerak alat transportasi, pengolahan lahan tanam (bajak), dan alat industri lain (seperti peremas tebu). Karena banyak kegunaan ini, sapi telah menjadi bagian dari berbagai kebudayaan manusia sejak lama.</p>
-                                    <p>Kebanyakan sapi ternak merupakan keturunan dari jenis liar yang dikenal sebagai aurochs (dalam bahasa Jerman berarti "sapi kuno", nama ilmiah: Bos primigenius[a]), yang sudah punah di Eropa sejak 1627. Namun, terdapat beberapa spesies sapi liar lain yang keturunannya didomestikasi, termasuk sapi bali yang juga diternakkan di Indonesia.</p>
+                                    <p><?php echo $shopdetail->deskripsi?></p>
                                 </div>
                             </div>
 
@@ -107,12 +109,14 @@
                                     
                                                 <p>Sapi brahman adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>
                                                 <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan.</p>
+                                            
                                 </div>
                             </div>
                             <div class="tab-pane fade " id="5" role="tabpanel" aria-labelledby="5-tab">
                                 <div class="location mb-50">
                                     <div class="map">
                                         <h3 class="heading-2">Lokasi Hewan</h3>
+                                        <?php }?>
                                         <div id="map" class="contact-map"></div>
                                     </div>
                                 </div>
@@ -132,8 +136,8 @@
                                         <img src="<?php echo base_url() ?>assets/img/avatar/avatar-3.jpg" alt="comments-user">
                                     </a>
                                 </div>
-                                <?php foreach($tampil as $shopdetailpenjual) {
-                                    $id = $shopdetailpenjual->id_komentar;
+                                <?php foreach($tampil as $shopdetail) {
+                                    $id = $shopdetail->id_komentar;
                                 ?>
                                 <div class="comment-content">
                                     <div class="comment-meta">
@@ -144,7 +148,7 @@
                                             <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                         </h6>
                                     </div>
-                                    <P><?php echo $shopdetailpenjual->isi_komentar ?></P>
+                                    <P><?php echo $shopdetail->isi_komentar ?></P>
                                 </div>
                         <!-- The Modal hapus -->
                             <div class="modal fade" id="hapus" style="top: 15%;">
