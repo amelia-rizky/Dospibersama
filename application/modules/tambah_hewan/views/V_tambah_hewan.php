@@ -13,7 +13,7 @@
 
                     
                     <div class="submit-address dashboard-list">
-                        <form method="post" action="<?php echo base_url().'tambah_hewan/tambah' ?>" enctype="multipart/form-data">
+                        <form method="post" action="<?php echo base_url().'tambah_hewan/product_saya' ?>" enctype="multipart/form-data">
                             <h4 class="bg-grea-3">Informasi Dasar</h4>
                             <div class="search-contents-sidebar">
                                 <div class="row pad-2">
@@ -153,7 +153,10 @@
                                  <div class="row pad-20" style="margin-left: 8%;" style="position: absolute;">
                                     <div class="col-lg-4 col-md-12 col-sm-12" style="margin-left: 70%; margin-top: -6%;">
                                         <br>
-                                        <button class="btn btn-md button-theme">Jual Sekarang !</button>
+                                        <label>
+                                            <a href="<?php echo base_url('product_saya'); ?>" class="btn btn-primary">Jual Disini !</a>
+                                        </label>
+                                        <!-- <button class="btn btn-md button-theme">Jual Sekarang !</button> -->
                                     </div>
                                 </div>
                             </div>
