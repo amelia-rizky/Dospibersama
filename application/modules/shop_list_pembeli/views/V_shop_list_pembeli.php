@@ -80,238 +80,64 @@
                     </div>
                 </div>
 
-                               <div class="row">
+
+
+
+
+                    <div class="row">
+                        <?php
+                            $no = $this->uri->segment(3)+1;
+                            foreach($tampil as $shoplist) {
+                        ?>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
                                 <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp 100.000.000 </div>
-                                    <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" alt="properties">
+                                    <div class="price-box"><span>Rp&nbsp;<?php echo
+                                    $shoplist->harga_hewan; ?></div>
+                                    <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg"
+                                    value="<?php echo $shoplist->gambar ?>" alt="properties">
                                 </a>
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Sapi Limusin</a>
+                                    <a href="<?php echo base_url('shop_detail_pembeli/detail/').$shoplist->id_datahewan ?>"><?php echo $shoplist->jenis_hewan; ?></a>
                                 </h1>
                                 <div class="location">
                                     <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
-                                        <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
+                                        <i class="flaticon-pin"></i><?php echo $shoplist->kabupaten; ?>
                                     </a>
                                 </div>
                                 <ul class="facilities-list clearfix">
                                     <li>
-                                        <i class="fa fa-arrows-alt"></i> 2m x 1.5m x 2m
+                                        <i class="fa fa-arrows-alt"></i>&nbsp;<?php echo $shoplist->ukuran_hewan; ?>
                                     </li>
                                     <li>
-                                        <i class="fa fa-balance-scale"></i> 2 ton
+                                        <i class="fa fa-balance-scale"></i>&nbsp;<?php echo $shoplist->berat_hewan; ?>&nbsp;
                                     </li>
                                     <li>
-                                        <i class="fa fa-venus-mars"></i> Jantan
+                                        <i class="fa fa-venus-mars"></i>&nbsp;<?php echo $shoplist->jenis_kelamin; ?>
                                     </li>
                                     <li>
-                                        <i class="fa fa-cutlery"></i> Combor
+                                        <i class="fa fa-cutlery"></i>&nbsp;<?php echo $shoplist->nama_makanan; ?>
                                     </li>
                                     <li>
-                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon> Merah
+                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp;<?php echo $shoplist->warna_hewan; ?>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
-                                    <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp 5.000.000</div>
-                                    <img class="d-block w-100" src="assets/img/properties/Kambing Etawa.jpg" alt="properties">
-                                </a>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Kambing Etawa</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
-                                        <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="fa fa-arrows-alt"></i> 2m x 1.5m x 2m
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-balance-scale"></i> 2 ton
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-venus-mars"></i> Jantan
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-cutlery"></i> Combor
-                                    </li>
-                                    <li>
-                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon> Merah
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
-                                    <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp 150.000.000</div>
-                                    <img class="d-block w-100" src="assets/img/properties/Sapi Brahman Putih.jpg" alt="properties">
-                                </a>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Sapi Brahman</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
-                                        <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="fa fa-arrows-alt"></i> 2m x 1.5m x 2m
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-balance-scale"></i> 2 ton
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-venus-mars"></i> Jantan
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-cutlery"></i> Combor
-                                    </li>
-                                    <li>
-                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon> Merah
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
-                                    <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp 5.000.000</div>
-                                    <img class="d-block w-100" src="assets/img/properties/Kambing Boer.jpg" alt="properties">
-                                </a>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Kambing Boer</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
-                                        <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="fa fa-arrows-alt"></i> 2m x 1.5m x 2m
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-balance-scale"></i> 2 ton
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-venus-mars"></i> Jantan
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-cutlery"></i> Combor
-                                    </li>
-                                    <li>
-                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon> Merah
-                                    </li>                     
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
-                                    <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp 125.000.000</div>
-                                    <img class="d-block w-100" src="assets/img/properties/Sapi Simmental Coklat.jpg" alt="properties">
-                                </a>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Sapi Simmental</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
-                                        <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="fa fa-arrows-alt"></i> 2m x 1.5m x 2m
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-balance-scale"></i> 2 ton
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-venus-mars"></i> Jantan
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-cutlery"></i> Combor
-                                    </li>
-                                    <li>
-                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon> Merah
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
-                                    <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp 5.000.000</div>
-                                    <img class="d-block w-100" src="assets/img/properties/Kambing Jawarandu.jpg" alt="properties">
-                                </a>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Kambing Jawa Randu</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
-                                        <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="fa fa-arrows-alt"></i> 2m x 1.5m x 2m
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-balance-scale"></i> 2 ton
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-venus-mars"></i> Jantan
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-cutlery"></i> Combor
-                                    </li>
-                                    <li>
-                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon> Merah
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                        <?php } ?>
                 </div>
+
+
+<?php echo $this->pagination->create_links(); ?>
+
+                   
                 <!-- Page navigation start -->
-                <div class="pagination-box text-center">
+               <!-- <div class="pagination-box text-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
@@ -326,6 +152,7 @@
                         </ul>
                     </nav>
                 </div>
+                -->
             </div>
         </div>
     </div>

@@ -22,46 +22,46 @@
                         <!-- main slider carousel items -->
                         <div class="carousel-inner">
                             <div class="active item carousel-item" data-slide-number="0">
-                                <img src="assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="1">
-                                <img src="assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="2">
-                                <img src="assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="4">
-                                <img src="assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="5">
-                                <img src="assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                         </div>
                         <!-- main slider carousel nav controls -->
                         <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                             <li class="list-inline-item active">
                                 <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-2" data-slide-to="2" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-3" data-slide-to="3" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                         </ul>
@@ -168,11 +168,9 @@
                   <?php } ?>
 
                  <!-- the end modal hapus -->
-
-
-                            </div>
-                        </li>
-                    </ul>
+            </div>
+        </li>
+    </ul>
                     <!-- Contact 2 start -->
                     <div class="contact-2 ca mb-50">
                         <h3 class="heading">Ikut Berdiskusi...</h3>
@@ -224,10 +222,18 @@
             <div class="col-lg-4 col-md-12">
                 <div class="sidebar-right">
 
+
+                    <!-- Start Foreach -->
+
+                    <?php foreach($tampil as
+                    $shopdetail) {
+
+                    ?>
+
                     <!-- Recent properties start -->
                     <div class="detail">
                         <br>
-                        <center><h4 class="title">Poniran Ternak</h4></center><br>
+                        <center><h4 class="title"></<?php echo $shopdetail->nama_pemilik ?></h4></center><br>
                         <div class="location" style="margin-top: 3%;">
                             <!-- <a href="properties-details.html"> -->
                                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
@@ -235,22 +241,25 @@
                         </div><br>
                         <ul class="facilities-list clearfix">
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; Sapi Brahman
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_hewan ?>
                             </li>
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp;2m x 1m x 150cm
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp; <?php echo $shopdetail->ukuran_hewan ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> 2ton
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> 
+                                <?php echo $shopdetail->berat_hewan ?>&nbsp;
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> Jantan/Betina
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> 
+                                <?php echo $shopdetail->jenis_kelamin ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; Combor
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_makanan ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; Merah 
+                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; 
+                                <?php echo $shopdetail->warna_hewan ?> 
                             </li>
                         </ul><br>
 

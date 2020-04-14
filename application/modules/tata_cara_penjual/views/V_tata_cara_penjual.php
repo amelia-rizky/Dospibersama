@@ -33,7 +33,7 @@
 
             <div class="col-md-6 sd">
                 <div class="card" style="background-color: #ffffff; padding: 5px; border: 1px solid black; box-shadow: 3px 3px 3px 3px rgba(38, 38, 38,.3);">
-                    <div class="card-body" style="height: 975px;">
+                    <div class="card-body" style="height: 990px;">
                         <center><h4 class="heading" style="color: #000000;"><?php echo $tatacarapenjual->judulpenjualan?></h4></center>
                         <p><?php echo $tatacarapenjual->penjualan?></p>
                         <br><br><br><br>
