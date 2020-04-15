@@ -8,7 +8,7 @@ class Tambah_hewan extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_tambah_hewan');
-
+		 $this->load->helper(array('form', 'url'));
 	}
 	
 	// index
@@ -25,7 +25,7 @@ class Tambah_hewan extends MX_Controller {
 	function tambah()
 	{
 		$this->m_tambah_hewan->hewan();
-		redirect('Tambah_hewan');
+		redirect('product_saya');
 	}
 
 	function edit()

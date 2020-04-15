@@ -25,6 +25,17 @@ class Shop_detail_pembeli extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore5', $data);
 	}
+	function detail($id_datahewan){
+		
+		$data = array(
+			'namamodule' 	=> "shop_detail_penmbeli",
+			'namafileview' 	=> "V_shop_detail_pembeli",
+			'tampil'		=> $this->m_shop_detail_pembeli->detail_hewan($id_datahewan),
+		);
+		echo Modules::run('template/tampilCore5', $data);
+	}
+
+
 	function komentar()
 	{
 		$this->m_shop_detail_pembeli->komentar();
@@ -42,3 +53,4 @@ class Shop_detail_pembeli extends MX_Controller {
 	}
 
 }
+?>

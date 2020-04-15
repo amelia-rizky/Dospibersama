@@ -1,5 +1,3 @@
-
-
 <!-- Sub banner start -->
 <div class="sub-banner">
     <div class="container breadcrumb-area">
@@ -94,7 +92,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="" class="property-img">
+                            <a href="<?php echo base_url('shop_detail_penjual'); ?>"
+                              class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp&nbsp;<?php echo $shoplist->harga_hewan; ?></div>
                                     <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" value="<?php echo $shoplist->gambar ?>" alt="properties">
@@ -105,7 +104,7 @@
                                     <a href="<?php echo base_url('shop_detail_penjual/detail/').$shoplist->id_datahewan ?>"><?php echo $shoplist->jenis_hewan; ?></a>
                                 </h1>
                                 <div class="location">
-                                    <a href="properties-detailspenjual.html">
+                                    <a href="<?php echo base_url('shop_detail_penjual'); ?>">
                                         <i class="flaticon-pin"></i><?php echo $shoplist->kabupaten; ?>
                                     </a>
                                 </div>
@@ -159,27 +158,3 @@
 <!-- Properties section body end -->
 
 
-<!-- The Modal hapus -->
-  <div class="modal fade" id="keluar" style="top: 15%;">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <center><h6>Apakah Anda yakin Untuk Keluar</h6></center>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <a href="index-3penjual.html" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
-          <a href="index-3.html" class="btn btn-success">Iya</a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
