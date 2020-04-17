@@ -79,9 +79,6 @@
                     <div class="tabbing tabbing-box mb-40">
                         <ul class="nav nav-tabs" id="carTab" role="tablist">
                             <li class="nav-item">
-                                <?php foreach($tampil as $shopdetail) {
-                                    
-                                ?>
                                 <a class="nav-link active show" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="false">Deskripsi</a>
                             </li>
                             <li class="nav-item">
@@ -97,7 +94,8 @@
                                     <h3 class="heading-2">
                                         Sapi
                                     </h3>
-                                    <p><?php echo $shopdetail->deskripsi?></p>
+                                    <p>Sapi brahman adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>
+                                                <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan.</p>
                                 </div>
                             </div>
 
@@ -116,7 +114,7 @@
                                 <div class="location mb-50">
                                     <div class="map">
                                         <h3 class="heading-2">Lokasi Hewan</h3>
-                                        <?php }?>
+                                        
                                         <div id="map" class="contact-map"></div>
                                     </div>
                                 </div>
