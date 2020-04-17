@@ -170,8 +170,15 @@ class M_shop_list_penjual extends CI_Model {
 
 	}
 
-
-
+	function cari(){   
+		$this->db->insert('filter_hewan');    
+		$this->db->insert('jenis_hewan');    
+		$this->db->insert('jenis_kelamin'); 
+		$this->db->insert('lokasi');
+		$this->db->insert('berat_min');  
+		$this->db->insert('berat_max');        
+		$result = $this->db->get('data_hewan')->result(); 
+	}
 }
 
 
