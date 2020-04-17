@@ -1,43 +1,42 @@
 <div class="col-lg-9 col-md-12 col-sm-12 col-pad">
-                <div class="content-area5">
-                    <div class="dashboard-content">
-                        <div class="dashboard-header clearfix">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6"><h4>Produk Kami</h4></div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="breadcrumb-nav">
-                                    </div>
-                                </div>
-                            </div>
+    <div class="content-area5">
+        <div class="dashboard-content">
+            <div class="dashboard-header clearfix">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6"><h4>Produk Kami</h4></div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="breadcrumb-nav">
                         </div>
-                        <div class="dashboard-list">
-                            <h3>Daftar Produk Kami</h3>
-                            <table class="manage-table">
-                                <?php 
-foreach ($tampil as $rey) {
-    $id_datahewan = $rey->id_datahewan;
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-list">
+                <h3>Daftar Produk Kami</h3>
+                <table class="manage-table">
+                <?php 
+                    foreach ($tampil as $rey) {
+                    $id_datahewan = $rey->id_datahewan;
 
- ?>
- 
-      
-                                <tbody>
-                                <tr class="responsive-table">
-                                    <td class="listing-photoo">
-                                        <img src="assets/img/properties/properties-1.jpg" alt="listing-photo" class="img-fluid">
-                                    </td>
-                                    <td class="title-container">
-                                        <input type="hidden" name="id_datahewan" value="<?php echo $rey->id_datahewan ?>">
-                                        <h2><a href=""><?php echo $rey->nama_pemilik ?></a></h2>
-                                        <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> 3214 Sempu Banyuwangi, </h5>
-                                        <h6 class="table-property-price">Rp. <?php echo $rey->harga_hewan ?></h6>
-                                    </td>
-                                    <td class="expire-date"><?php echo $rey->tanggal_tambah?></td>
-                                    <td class="action">
-                                        <a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style="margin-left: -20%;"><i class="fa fa-pencil"></i> Edit</a>
-                                        <a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?>" style="margin-left: -20%;"><i class="fa fa-remove" ></i> Hapus</a>
-                                    </td>
-                                </tr>
-                            </tbody>
+                ?>
+
+            <tbody>
+                <tr class="responsive-table">
+                <td class="listing-photoo">
+                    <img src="assets/img/properties/properties-1.jpg" alt="listing-photo" class="img-fluid">
+                </td>
+                <td class="title-container">
+                    <input type="hidden" name="id_datahewan" value="<?php echo $rey->id_datahewan ?>">
+                    <h2><a href=""><?php echo $rey->nama_pemilik ?></a></h2>
+                    <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> <?php echo $rey->kabupaten?></h5>
+                    <h6 class="table-property-price">Rp. <?php echo $rey->harga_hewan ?></h6>
+                </td>
+                <td class="expire-date"><?php echo $rey->tanggal_tambah?></td>
+                <td class="action">
+                    <a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style="margin-left: -20%;"><i class="fa fa-pencil"></i> Edit</a>
+                    <a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?> " style="margin-left: -20%;"><i class="fa fa-remove" ></i> Hapus</a>
+                </td>
+                </tr>
+            </tbody>
 
 <div class="modal fade" id="edit<?php echo $rey->id_datahewan ?>" style="top: 15%;">
     <div class="modal-dialog modal-lg">
@@ -46,8 +45,8 @@ foreach ($tampil as $rey) {
         <?= form_open_multipart('product_saya/edit_hewan');  ?>  
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Ubah Produk</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Ubah Produk</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <!-- Modal body -->
         <div class="modal-body">
@@ -84,19 +83,20 @@ foreach ($tampil as $rey) {
                     <div class="form-group">
                         <label class="control-label">Berat Hewan (Kg)</label>
                         <input type="text" name="berat_hewan" class="form-control"  value="<?php echo $rey->berat_hewan; ?>">
+
                     </div>
                 </div>
-                    <div class="col-sm-6">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label class="control-label">Jenis Kelamin</label><br>
                             <div>
                                 <input type="radio" id="jantan"
-                                 name="jenis_kelamin" value="<?php echo $rey->jenis_kelamin; ?>">
-                                <label for="jantan">jantan</label>
+                                 name="jenis_kelamin" value="<?= $rey->jenis_kelamin; ?>">
+                                <label for="jantan">Jantan</label>
 
                                 <input type="radio" id="betina"
-                                 name="jenis_kelamin" value="<?php echo $rey->jenis_kelamin; ?>">
-                                <label for="betina">betina</label>
+                                 name="jenis_kelamin" value="<?= $rey->jenis_kelamin; ?>">
+                                <label for="betina">Betina</label>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ foreach ($tampil as $rey) {
                         <label class="control-label">Tanggal</label>
                         <input type="date" name="tanggal_tambah" class="form-control"  value="<?php echo $rey->tanggal_tambah; ?>">
                         
-                </div>
+                    </div>
                 </div>
                  <div class="col-sm-6">
                     <div class="form-group">
@@ -143,43 +143,48 @@ foreach ($tampil as $rey) {
                     </div>
                 </div>
             </div>
-                            <div class="row pad-20">
-                                <div class="col-md-4" class="form-group">
-                                    <input class="form-control" type="file" name="gambar1" id="userfile" onchange="tampilkanPreview(this,'preview1')">
-                                        <div class="col-md-6 " style="margin-top: 2%">
-                                          <label for="" class="control-label">Gambar 1</label>
-                                           <img id="preview1" width="150px" />
-                                        </div>
-                                </div>
-                                <div class="col-md-4" class="form-group">
-                                    <input class="form-control" type="file" name="gambar2" id="userfile" onchange="tampilkanPreview(this,'preview2')">
-                                        <div class="col-md-6 " style="margin-top: 2%">
-                                          <label for="" class="control-label">Gambar 2</label>
-                                           <img id="preview2" width="150px" />
-                                        </div>
-                                </div>
-                                <div class="col-md-4" class="form-group">
-                                    <input class="form-control" type="file" name="gambar3" id="userfile" onchange="tampilkanPreview(this,'preview3')">
-                                        <div class="col-md-6 " style="margin-top: 2%">
-                                          <label for="" class="control-label">Gambar 3</label>
-                                           <img id="preview3" width="150px" />
-                                        </div>
-                                </div>
-                                <div class="col-md-4" class="form-group">
-                                    <input class="form-control" type="file" name="gambar4" id="userfile" onchange="tampilkanPreview(this,'preview4')">
-                                        <div class="col-md-6 " style="margin-top: 2%">
-                                          <label for="" class="control-label">Gambar 4</label>
-                                           <img id="preview4" width="150px" />
-                                        </div>
-                                </div>
-                                <div class="col-md-4" class="form-group">
-                                    <input class="form-control" type="file" name="gambar5" id="userfile" onchange="tampilkanPreview(this,'preview5')">
-                                        <div class="col-md-6 " style="margin-top: 2%">
-                                          <label for="" class="control-label">Gambar 5</label>
-                                           <img id="preview5" width="150px" />
-                                        </div>
-                                </div>
-                            </div>
+
+            <div class="row pad-20">
+                <div class="col-md-4" class="form-group">
+                    <input class="form-control" type="file" name="gambar1" id="userfile" onchange="tampilkanPreview(this,'preview1')">
+                        <div class="col-md-6 " style="margin-top: 2%">
+                            <label for="" class="control-label">Gambar 1</label>
+                                <img id="preview1" width="150px" />
+                        </div>
+                </div>
+
+            <div class="col-md-4" class="form-group">
+                <input class="form-control" type="file" name="gambar2" id="userfile" onchange="tampilkanPreview(this,'preview2')">
+                        <div class="col-md-6 " style="margin-top: 2%">
+                            <label for="" class="control-label">Gambar 2</label>
+                                <img id="preview2" width="150px" />
+                        </div>
+            </div>
+
+            <div class="col-md-4" class="form-group">
+                <input class="form-control" type="file" name="gambar3" id="userfile" onchange="tampilkanPreview(this,'preview3')">
+                    <div class="col-md-6 " style="margin-top: 2%">
+                        <label for="" class="control-label">Gambar 3</label>
+                            <img id="preview3" width="150px" />
+                    </div>
+            </div>
+
+            <div class="col-md-4" class="form-group">
+                <input class="form-control" type="file" name="gambar4" id="userfile" onchange="tampilkanPreview(this,'preview4')">
+                    <div class="col-md-6 " style="margin-top: 2%">
+                        <label for="" class="control-label">Gambar 4</label>
+                            <img id="preview4" width="150px" />
+                    </div>
+            </div>
+
+            <div class="col-md-4" class="form-group">
+                <input class="form-control" type="file" name="gambar5" id="userfile" onchange="tampilkanPreview(this,'preview5')">
+                    <div class="col-md-6 " style="margin-top: 2%">
+                        <label for="" class="control-label">Gambar 5</label>
+                            <img id="preview5" width="150px" />
+                    </div>
+            </div>
+        </div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
@@ -193,33 +198,36 @@ foreach ($tampil as $rey) {
 
 
 
-<div class="modal fade" id="hapus<?php echo $rey->id_datahewan ?>" style="top: 15%;">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <!-- Modal body -->
-        <div class="modal-body">
-          <center><h6>Apakah Anda yakin Untuk Menghapus Product ini ???</h6></center>
-        </div>
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <a type="button" class="btn btn-danger" href="<?php echo base_url('product_saya/hapus/'. $rey->id_datahewan) ?>" data-dismiss="modal">Hapus</a>
-          <!-- <a class="btn btn-success">Batal</a> -->
-        </div>      
-        </div>
-        <!-- Modal footer -->
-      </div>
-    </div>
-  <?php } ?>                        
-                            </table>
-                        </div>
-                    </div>
-                    <p class="sub-banner-2 text-center">© 2020 Dospi.com.</p>
+        <div class="modal fade" id="hapus<?php echo $rey->id_datahewan ?>" style="top: 15%;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <center><h6>Apakah Anda yakin Untuk Menghapus Product ini ???</h6></center>
+                </div>
+                <!-- Modal footer -->
+
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-danger" href="<?php echo base_url('product_saya/hapus/'. $rey->id_datahewan) ?>" data-dismiss="modal">Hapus</a>
+                <!-- <a class="btn btn-success">Batal</a> -->
+                </div>      
                 </div>
             </div>
+            </div>
+        <?php } ?>     
+                   
+        </table>
+    </div>
+    </div>
+        <p class="sub-banner-2 text-center">© 2020 Dospi.com.</p>
+    </div>
+    </div>
 
 <script type="text/javascript">
 

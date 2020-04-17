@@ -7,21 +7,22 @@ class M_product_saya extends CI_Model {
 	{
 		return $this->db->get('data_hewan')->result();
 
-				// join
-			$this->db->select('*')
-				->from('data_hewan')
-				->join('gambar_hewan', 'data_hewan.id_gambar = gambar_hewan.id_gambar')
-				->join('jenis_hewan', 'data_hewan.id_jenis = jenis_hewan.id_jenis')
-				->join('kategori_hewan', 'data_hewan.id_kategori = kategori_hewan.id_kategori')
-				->join('tb_makanan', 'data_hewan.id_makanan = tb_makanan.id_makanan')
-				->where('data_hewan.id_datahewan',$id_datahewan);
-			$query = $this->db->get();
-			return $query;
+		// join
+		$this->db->select('*')
+			->from('data_hewan')
+			->join('gambar_hewan', 'data_hewan.id_gambar = gambar_hewan.id_gambar')
+			->join('jenis_hewan', 'data_hewan.id_jenis = jenis_hewan.id_jenis')
+			->join('kategori_hewan', 'data_hewan.id_kategori = kategori_hewan.id_kategori')
+			->join('tb_makanan', 'data_hewan.id_makanan = tb_makanan.id_makanan')
+			->where('data_hewan.id_datahewan',$id_datahewan);
+		$query = $this->db->get();
+		return $query;
 	}
 
 	function edit_hewan()
 	{
-		// Table Tambah Hewan
+
+		// Table Edit Hewan
 		$id_datahewan	= $this->input->post('id_datahewan');
 
 		// $jenishewan		= $this->input->post('jenis_hewan');
@@ -51,12 +52,13 @@ class M_product_saya extends CI_Model {
 			'kode_pos'			=> $kodepos,
 			'tanggal_tambah'	=> $tanggaltambah
 		 );
-		$this->db->update('data_hewan',$data_hewan);
+
+		// $this->db->update('data_hewan',$data_hewan);
+		$this->db->where('id_datahewan',$id_datahewan)->update('data_hewan',$data_hewan);
 		
 
 
 		// Table Gambar Hewan
-
 		$this->load->library('upload');
 		$nmfile = "file_".time();
 		$config['upload_path']		= 'assets/img/properties';
@@ -151,48 +153,16 @@ class M_product_saya extends CI_Model {
 
 
 		// table makanan
-
 		$jenismakanan	= $this->input->post('jenis_makanan');
 
 		$makanan =array(
 			'nama_makanan'	=> $jenismakanan
-		);
+			);
 		$this->db->update('tb_makanan',$makanan);
-}
-		function hapus($id_datahewan)
-		{
-			$this->db->where('id_datahewan', $id_datahewan)->delete('data_hewan');
-		}
+	}
 
-	
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	function hapus($id_datahewan)
+	{
+		$this->db->where('id_datahewan', $id_datahewan)->delete('data_hewan');
+	}
+	}
