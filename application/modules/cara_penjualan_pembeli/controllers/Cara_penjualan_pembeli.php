@@ -7,7 +7,7 @@ class Cara_penjualan_pembeli extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_cara_penjualan_pembeli');
+		 $this->load->model('M_cara_penjualan_pembeli');
 
 		 // dropzone
          $this->load->helper(array('form','url'));
@@ -22,7 +22,7 @@ class Cara_penjualan_pembeli extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "cara_penjualan_pembeli",
 			'namafileview' 	=> "V_cara_penjualan_pembeli",
-			'tampil'		=> $this->m_cara_penjualan_pembeli->tampil(),
+			'tampil'		=> $this->M_cara_penjualan_pembeli->tampil(),
 		);
 		echo Modules::run('template/tampilCore5', $data);
     }

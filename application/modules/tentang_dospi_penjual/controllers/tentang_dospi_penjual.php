@@ -7,7 +7,7 @@ class Tentang_dospi_penjual extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_tentang_dospi_penjual');
+		 $this->load->model('M_tentang_dospi_penjual');
 
 		 // dropzone
          $this->load->helper(array('form','url'));
@@ -22,7 +22,7 @@ class Tentang_dospi_penjual extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "tentang_dospi_penjual",
 			'namafileview' 	=> "V_tentang_dospi_penjual",
-			'tampil'		=> $this->m_tentang_dospi_penjual->tampil(),
+			'tampil'		=> $this->M_tentang_dospi_penjual->tampil(),
 		);
 		echo Modules::run('template/tampilCore4', $data);
 	}

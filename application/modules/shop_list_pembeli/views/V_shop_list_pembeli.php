@@ -126,7 +126,7 @@
                                         <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp;<?php echo $shoplist->warna_hewan; ?>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>   
                         </div>
                     </div>
                         <?php } ?>

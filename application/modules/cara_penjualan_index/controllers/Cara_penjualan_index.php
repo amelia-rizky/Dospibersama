@@ -7,7 +7,7 @@ class cara_penjualan_index extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_cara_penjualan_index');
+		 $this->load->model('M_cara_penjualan_index');
 
 		 // dropzone
          $this->load->helper(array('form','url'));
@@ -22,7 +22,7 @@ class cara_penjualan_index extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "cara_penjualan_index",
 			'namafileview' 	=> "V_cara_penjualan_index",
-			'tampil'		=> $this->m_cara_penjualan_index->tampil(),
+			'tampil'		=> $this->M_cara_penjualan_index->tampil(),
 		);
 		echo Modules::run('template/tampil_template_index', $data);
 	}

@@ -5,7 +5,7 @@
         <div class="breadcrumb-areas">
             <h1>Tentang Dospi</h1>
             <ul class="breadcrumbs">
-                <li><a href="index-3penjual.html">Home</a></li>
+                <li><a href="<?php echo base_url('halaman_penjual');?>"class="nav-link">Home</a></li>
                 <li class="active">Tentang Dospi</li>
             </ul>
             <?php foreach($tampil as $tentangdospipenjual) {

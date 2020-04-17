@@ -7,7 +7,7 @@ class Tentang_dospi_pembeli extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_tentang_dospi_pembeli');
+		 $this->load->model('M_tentang_dospi_pembeli');
 
 		 // dropzone
          $this->load->helper(array('form','url'));
@@ -22,7 +22,7 @@ class Tentang_dospi_pembeli extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "tentang_dospi_pembeli",
 			'namafileview' 	=> "V_tentang_dospi_pembeli",
-			'tampil'		=> $this->m_tentang_dospi_pembeli->tampil(),
+			'tampil'		=> $this->M_tentang_dospi_pembeli->tampil(),
 		);
 		echo Modules::run('template/tampilCore5', $data);
 	}

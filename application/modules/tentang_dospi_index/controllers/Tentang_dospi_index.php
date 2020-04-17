@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class tentang_dospi_index extends MX_Controller {
+class Tentang_dospi_index extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_tentang_dospi_index');
+		 $this->load->model('M_tentang_dospi_index');
 
 		 // dropzone
          $this->load->helper(array('form','url'));
@@ -22,7 +22,7 @@ class tentang_dospi_index extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "tentang_dospi_index",
 			'namafileview' 	=> "V_tentang_dospi_index",
-			'tampil'		=> $this->m_tentang_dospi_index->tampil(),
+			'tampil'		=> $this->M_tentang_dospi_index->tampil(),
 		);
 		echo Modules::run('template/tampil_template_index', $data);
 	}

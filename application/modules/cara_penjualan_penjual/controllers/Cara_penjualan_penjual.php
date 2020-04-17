@@ -7,7 +7,7 @@ class Cara_penjualan_penjual extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_cara_penjualan_penjual');
+		 $this->load->model('M_cara_penjualan_penjual');
 
 		 // dropzone
          $this->load->helper(array('form','url'));
@@ -22,7 +22,7 @@ class Cara_penjualan_penjual extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "cara_penjualan_penjual",
 			'namafileview' 	=> "V_cara_penjualan_penjual",
-			'tampil'		=> $this->m_cara_penjualan_penjual->tampil(),
+			'tampil'		=> $this->M_cara_penjualan_penjual->tampil(),
 		);
 		echo Modules::run('template/tampilCore4', $data);
     }
