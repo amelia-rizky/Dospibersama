@@ -15,19 +15,6 @@ class M_shop_detail_pembeli extends CI_Model {
 		$query = $this->db->get();
 
 		return $query->result();
-
-
-						// Join spesifikasi hewan
-
-		// $this->db->select('*')
-		// 		 ->from('data_hewan')
-		// 		 ->join('jenis_hewan', 'jenis_hewan.id_jenis = data_hewan.id_jenis')
-		// 		 ->join('tb_makanan','tb_makanan.id_makanan = data_hewan.id_makanan')
-		// 		 ->join('gambar_hewan', 'gambar_hewan.id_gambar = data_hewan.id_gambar');
-		// $query = $this->db->get();
-		// return $query->result();	
-
-
 	}
 	
 	function detail_hewan($id_datahewan){
@@ -68,13 +55,20 @@ class M_shop_detail_pembeli extends CI_Model {
 			$this->db->insert('tb_komentar',$balas);
 	
 			}
+	function pesan()
+	{
+		$isipesan      = $this->input->post('isi_pesan');
+       
+		$pesan = array(
+			'isi_pesan'     => $isipesan,
+			
+		 );
+        $this->db->insert('tb_pesan',$pesan);
+	}
 
 	function hapus()
 	{
 		$this->db->where('id_komentar', $id)->delete('tb_komentar');
 	}
-
-
-
 }
 ?>

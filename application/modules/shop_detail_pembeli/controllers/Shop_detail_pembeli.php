@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -7,13 +8,10 @@ class Shop_detail_pembeli extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_shop_detail_pembeli');
-
-		 
+		 $this->load->model('m_shop_detail_pembeli'); 
 		 $this->load->helper(array('form','url'));
 		//  $this->load->model('login/m_session');
 	}
-
 	
 	// index
 	function index()
@@ -46,6 +44,12 @@ class Shop_detail_pembeli extends MX_Controller {
 		$this->m_shop_detail_pembeli->balas();
 		   
 	}
+
+	function pesan()
+	{
+		$this->m_shop_detail_pembeli->pesan();
+	}
+	
 	function hapus($id)
 	{
 		$this->m_shop_detail_pembeli->hapus($id);

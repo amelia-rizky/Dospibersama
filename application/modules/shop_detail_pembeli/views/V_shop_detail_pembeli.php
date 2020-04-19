@@ -1,3 +1,4 @@
+
 <!-- Sub banner start -->
 <div class="sub-banner">
     <div class="container breadcrumb-area">
@@ -25,43 +26,43 @@
                                 <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="1">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="2">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="4">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="5">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                         </div>
                         <!-- main slider carousel nav controls -->
                         <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                             <li class="list-inline-item active">
                                 <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-2" data-slide-to="2" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-3" data-slide-to="3" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                         </ul>
@@ -70,8 +71,8 @@
                             <div class="price-location"></div>
                         </div>
                     </div>
+                    <!-- End Beli Start -->
 
-                    <!-- Advanced search start -->
                     
                     <!-- Tabbing box start -->
                     <div class="tabbing tabbing-box mb-40">
@@ -125,11 +126,11 @@
                             <div class="comment">
                                 <div class="comment-author">
                                     <a href="#">
-                                        <img src="<?php echo base_url() ?>assets/img/avatar/avatar-1.jpg" alt="comments-user">
+                                        <img src="<?php echo base_url (); ?>assets/img/avatar/avatar-1.jpg" alt="comments-user">
                                     </a>
                                 </div>
-                                <?php foreach($tampil as $shopdetailpembeli) {
-                                    $id = $shopdetailpembeli->id_komentar;
+                                 <?php foreach($tampil as $shopdetail) {
+                                    $id = $shopdetail->id_komentar;
                                 ?>
                                 <div class="comment-content">
                                     <div class="comment-meta">
@@ -140,44 +141,44 @@
                                             <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                         </h6>
                                     </div>
-                                    <p><?php echo $shopdetailpembeli->isi_komentar ?></p>
+                                    <p><?php echo $shopdetail->isi_komentar ?></p>
                                 </div>
                                 <!-- The Modal hapus -->
-                    <div class="modal fade" id="hapus" style="top: 15%;">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content">
-                      
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                  <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
-                                </div>
-                                
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
-                                </div>
-                        
-                            </div>
-                        </div>
-                  </div>
-                  <?php } ?>
+                            <div class="modal fade" id="hapus" style="top: 15%;">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                              
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
+                                        </div>
+                                        
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
 
-                 <!-- the end modal hapus -->
-            </div>
-        </li>
-    </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                    <?php } ?>
+                    <!-- the end modal hapus -->
+                </div>
+            </li>
+        </ul>
+                            
                     <!-- Contact 2 start -->
                     <div class="contact-2 ca mb-50">
                         <h3 class="heading">Ikut Berdiskusi...</h3>
-                        <form action="<?php echo base_url().'shop_detail_pembeli/komentar'?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php echo base_url().'shop_detail_pembeli/komentar'?> " method="post" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="form-group message col-md-12">
-                                    <input class="form-control" name="isi_komentar" placeholder="Tuliskan Pesanmu" style="color: #333;"></textarea>
+                                    <input class="form-control" name="isi_komentar" placeholder="Tuliskan Pesanmu" style="color: #333;">
                                 </div>
                                 <div class="send-btn col-md-12">
                                     <button type="submit" class="btn btn-md button-theme">Kirim Pesan</button>
@@ -187,53 +188,40 @@
                     </div>
                 </div>
             </div>
-
-            <!-- The Modal balas -->
-                  <div class="modal fade" id="balas" style="top: 15%;">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content">
-                            <form action="<?php echo base_url().'shop_detail_pembeli/balas'?>" method="post" enctype="multipart/form-data">
-                        <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Balas</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <input type="text" class="form-control" rows="5" id="comment" name="balas">
-                                    </div>
-                                </div>
-                                
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                  <button type="submit" class="btn btn-success" data-dismiss="modal">Kirim</button>
-                                </div>
-                        
-                            </div>
+              <!--   start modal balasan -->
+            <div class="modal fade" id="balas" style="top: 15%;">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                      <!--  <form action="<?php echo base_url().'shop_detail_pembeli/balas'?>" method="post" enctype="multipart/form-data"> -->
+                                <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Balas</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
-                  </div>
+                                        
+                                <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="comment">Comment:</label>
+                                <input type="text" class="form-control" rows="5" id="comment" name="balas">
+                            </div>
+                        </div>                
+                                        <!-- Modal footer -->
+                                 <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                 <!-- the end modal balas -->
-
-
+                    <!--   end start modal balasan -->
             <div class="col-lg-4 col-md-12">
                 <div class="sidebar-right">
-
-
-                    <!-- Start Foreach -->
-
-                    <?php foreach($tampil as
-                    $shopdetail) {
-
-                    ?>
 
                     <!-- Recent properties start -->
                     <div class="detail">
                         <br>
-                        <center><h4 class="title"></<?php echo $shopdetail->nama_pemilik ?></h4></center><br>
+                        <center><h4 class="title">Poniran Ternak</h4></center><br>
                         <div class="location" style="margin-top: 3%;">
                             <!-- <a href="properties-details.html"> -->
                                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
@@ -241,65 +229,62 @@
                         </div><br>
                         <ul class="facilities-list clearfix">
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_hewan ?>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; Sapi Brahman
                             </li>
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp; <?php echo $shopdetail->ukuran_hewan ?>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp;2m x 1m x 150cm
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> 
-                                <?php echo $shopdetail->berat_hewan ?>&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> 2ton
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> 
-                                <?php echo $shopdetail->jenis_kelamin ?>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> Jantan/Betina
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_makanan ?>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; Combor
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; 
-                                <?php echo $shopdetail->warna_hewan ?> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; Merah 
                             </li>
                         </ul><br>
-
                         <!-- Start Modal Chat Penjual -->
                         <div class="chatpenjual" style="margin-left: 50%;">
-                            <button class="btn  btn-outline-warning" data-target="#pesanpenjual" data-toggle="modal" style="font-size: 18px;" href="#"><i class="fa fa-comments">&nbsp;Chat Penjual</i></button>
+                            <button class="btn  btn-outline-warning" data-target="#pesanpenjual" data-toggle="modal" style="font-size: 18px;" <i class="fa fa-comments">&nbsp;Chat Penjual</i></button>
                         </div>
-
+                        
                         <!--===================================================-->
                         <div class="modal fade" id="pesanpenjual" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header" style="background-color: #ff9900;">
-                                <h5 class="modal-title" id="ModalLabel">&nbsp;<I class="fa fa-comments"></I>&nbsp;&nbsp;Chat Disini !</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <form>
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color: #ff9900;">
+                                        <h5 class="modal-title" id="ModalLabel">&nbsp;<I class="fa fa-comments"></I>&nbsp;&nbsp;Chat Disini !</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                             <div class="modal-body">
+                                <form method="post" action="<?php echo base_url().'shop_detail_pembeli/pesan' ?>" enctype="multipart/form-data" >
                                   <div class="form-group">
                                     <label for="message-text" class="col-form-label">Message:</label>
-                                    <textarea class="form-control" id="message-text md-6"></textarea>
+                                    <input class="form-control" class="text" name="isi_pesan" placeholder="tuliskan pesanmu disini">
                                   </div>
                                 </form>
                               </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-success">Kirim Pesan</button>
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success">Kirim Pesan</button>
+                                    <button type="submit" class="btn btn-light" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>            
                         </div>
+                    </div>
+                
                         <!--===================================================-->
                           <!--End Modal Chat Penjual-->
                     </div><br>
                     
                     <!-- Beli Start -->
                      <div style="text-align: center;">
-                            <center><h3 class="belirp" style="margin-bottom: 0;">Rp 70.000.000</h3></center>
+                            <center><h3 class="belirp" style="margin-bottom: 0;">Rp<?php echo $shopdetail->harga_hewan ?></h3></center>
                             <button data-target="#belisekarang" data-toggle="modal" class="btn btn-success col-md" style="margin-top: 1%;">Beli Sekarang</button>
                      </div>
 
@@ -370,65 +355,7 @@
                     
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 <!-- Properties details page end -->
-<!--Default Bootstrap Modal-->
-                    <!--===================================================-->
-                    <div class="modal fade" id="belisekarang" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content lg-12">
-
-                                <!--Modal header-->
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
-                                    <h5 class="modal-title">Checkout <span class="fa fa-check"></span></h5>
-                                </div>
-                                <!-- modal body -->
-                                    <div class="dashboard-list">
-                                            <table class="manage-table">
-                                                <tbody>
-                                                    <h6 style="margin-left: 66%; position: absolute; font-size: 16px;">Tanggal:</h6>
-                                                    <td class="expire-date" style="margin-left: 80%; position: absolute; font-size: 15px;">11.02.2020</td> 
-                                                <tr class="responsive-table">
-                                                    <td class="listing-photoo">
-                                                        <img src="assets/img/properties/properties-1.jpg" alt="listing-photo" class="img-fluid">
-                                                    </td>
-                                                    
-                                                    <td class="title-container">
-                                                        <h2><a href="#">Sapi Brahman</a></h2>
-                                                        <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> 3214 Sempu Banyuwangi, </h5>
-                                                        <h6 class="table-property-price">Rp. 70.000.000</h6>
-                                                    </td> 
-                                                </tr>
-                                                </tbody>
-
-                                            </table>
-                                        </div>
-                                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                                    <address class="address-info">
-                                                        <p>No.Order&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 001</p>
-                                                        <p>Code Hewan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1</p>
-                                                        <p class="strong">Total Harga Hewan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rp. 50.000.000</p>
-                                                        <p>Sub Total DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;27%</p>
-                                                        <p>Total Pembayaran Dp&nbsp;&nbsp;&nbsp;: Rp. 13.500.000</p>
-                                                    </address>
-                                                </div>
-                                <!--Modal footer-->
-                                <div class="modal-footer">
-                                    <button data-dismiss="modal" class="btn btn-danger" type="button" style="border-radius: 15%;">Cancel</button>
-                                    <button class="btn btn-success" style="border-radius: 15%;"><a href="pembelian-proses.html" style="color: #fff;">Pesan</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--===================================================-->
-                      <!--End Default Bootstrap Modal-->
-
-
-
-                                  
-
-                 
