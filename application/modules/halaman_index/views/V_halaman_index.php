@@ -370,7 +370,7 @@
                                 <div class="category-overlay">
                                     <div class="category-content">
                                         <h3 class="category-title">
-                                            <a href="properties-grid-leftside.html">Kambing</a>
+                                            <li><a href="<?php echo base_url('shop_list_index');?>"class="nav-link">Kambing</a></li>
                                         </h3>
                                         <h4 class="category-subtitle">Product Kami</h4>
                                     </div>
@@ -388,7 +388,7 @@
                                 <div class="category-overlay">
                                     <div class="category-content">
                                         <h3 class="category-title">
-                                            <a href="properties-grid-leftside.html">Sapi</a>
+                                            <li><a href="<?php echo base_url('shop_list_index');?>"class="nav-link">Sapi</a></li>
                                         </h3>
                                         <h4 class="category-subtitle">Product Kami</h4>
                                     </div>
