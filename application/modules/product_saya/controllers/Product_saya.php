@@ -29,8 +29,6 @@ class Product_saya extends MX_Controller {
 
 	function edit_hewan()
 	{
-		// $data['tampil']=$this->m_product_saya->edit_hewan();
-		// $this->load->view('V_product_saya', $data);
 		$this->m_product_saya->edit_hewan();
 		// redirect('product_saya');
 	}

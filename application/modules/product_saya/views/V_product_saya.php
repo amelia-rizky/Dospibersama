@@ -214,7 +214,7 @@
                 <!-- Modal footer -->
 
                 <div class="modal-footer">
-                    <a type="button" class="btn btn-danger" href="<?php echo base_url('product_saya/hapus/'. $rey->id_datahewan) ?>" data-dismiss="modal">Hapus</a>
+                    <a type="button" class="btn btn-danger" href="<?php echo base_url('product_saya/hapus/'. $rey->id_datahewan) ?>">Hapus</a>
                 <!-- <a class="btn btn-success">Batal</a> -->
                 </div>      
                 </div>

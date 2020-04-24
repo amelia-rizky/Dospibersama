@@ -61,7 +61,7 @@ class M_product_saya extends CI_Model {
 		// Table Gambar Hewan
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/img/properties';
+		$config['upload_path']		= 'assets/img/properties/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -153,12 +153,12 @@ class M_product_saya extends CI_Model {
 
 
 		// table makanan
-		$jenismakanan	= $this->input->post('jenis_makanan');
+		// $jenismakanan	= $this->input->post('jenis_makanan');
 
-		$makanan =array(
-			'nama_makanan'	=> $jenismakanan
-			);
-		$this->db->update('tb_makanan',$makanan);
+		// $makanan =array(
+		// 	'nama_makanan'	=> $jenismakanan
+		// 	);
+		// $this->db->update('tb_makanan',$makanan);
 	}
 
 	function hapus($id_datahewan)
