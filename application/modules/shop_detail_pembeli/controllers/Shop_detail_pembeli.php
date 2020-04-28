@@ -12,7 +12,7 @@ class Shop_detail_pembeli extends MX_Controller {
 		 $this->load->helper(array('form','url'));
 		//  $this->load->model('login/m_session');
 	}
-	
+
 	// index
 	function index()
 	{
@@ -32,8 +32,6 @@ class Shop_detail_pembeli extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore5', $data);
 	}
-
-
 	function komentar()
 	{
 		$this->m_shop_detail_pembeli->komentar();
@@ -44,7 +42,6 @@ class Shop_detail_pembeli extends MX_Controller {
 		$this->m_shop_detail_pembeli->balas();
 		   
 	}
-
 	function pesan()
 	{
 		$this->m_shop_detail_pembeli->pesan();

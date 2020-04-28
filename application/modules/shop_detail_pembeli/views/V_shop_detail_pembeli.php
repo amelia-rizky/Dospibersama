@@ -218,10 +218,15 @@
             <div class="col-lg-4 col-md-12">
                 <div class="sidebar-right">
 
+                    <!-- Start Foreach -->
+
+                    <?php foreach($tampil as $shopdetail) {
+
+                    ?>
                     <!-- Recent properties start -->
                     <div class="detail">
                         <br>
-                        <center><h4 class="title">Poniran Ternak</h4></center><br>
+                        <center><h4 class="title"><?php echo $shopdetail->nama_pemilik ?></h4></center><br>
                         <div class="location" style="margin-top: 3%;">
                             <!-- <a href="properties-details.html"> -->
                                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
@@ -229,22 +234,22 @@
                         </div><br>
                         <ul class="facilities-list clearfix">
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; Sapi Brahman
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_hewan ?>
                             </li>
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp;2m x 1m x 150cm
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp; <?php echo $shopdetail->ukuran_hewan ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> 2ton
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> <?php echo $shopdetail->berat_hewan ?>&nbsp;Kg
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> Jantan/Betina
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> <?php echo $shopdetail->jenis_kelamin ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; Combor
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_makanan ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; Merah 
+                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; <?php echo $shopdetail->warna_hewan ?>
                             </li>
                         </ul><br>
                         <!-- Start Modal Chat Penjual -->
@@ -284,8 +289,8 @@
                     
                     <!-- Beli Start -->
                      <div style="text-align: center;">
-                            <center><h3 class="belirp" style="margin-bottom: 0;">Rp<?php echo $shopdetail->harga_hewan ?></h3></center>
-                            <button data-target="#belisekarang" data-toggle="modal" class="btn btn-success col-md" style="margin-top: 1%;">Beli Sekarang</button>
+                            <center><h3 class="belirp" style="margin-bottom: 2%;">Rp&nbsp; <?php echo $shopdetail->harga_hewan ?></h3></center>
+                            <button data-target=#modalConfirmWarning" data-toggle="modal" class="btn btn-success col-md">Beli Sekarang</button>
                      </div>
 
                     <!-- End Beli -->
@@ -339,6 +344,7 @@
                             </div>
                         </div>
                     </div>
+                <?php } ?>
                    
                     <div class="widget social-links">
                         <h3 class="sidebar-title">Media Sosial</h3>
