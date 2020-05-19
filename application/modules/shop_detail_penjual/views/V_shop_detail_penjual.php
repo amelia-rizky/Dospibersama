@@ -4,7 +4,7 @@
         <div class="breadcrumb-areas">
             <h1>Rincian Hewan</h1>
             <ul class="breadcrumbs">
-                <li><a href="index-3penjual.html">Home</a></li>
+                <li><a href="<?php echo base_url('halaman_penjual');?>"class="nav-link">Home</a></li>
                 <li class="active">Rincian Hewan</li>
             </ul>
         </div>
@@ -95,7 +95,7 @@
                                         Sapi
                                     </h3>
                                     <p>Sapi brahman adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>
-                                                <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan.</p>
+                                                <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan. </p>
                                 </div>
                             </div>
 
@@ -123,103 +123,12 @@
                     </div>
 
 
-                    <!-- Heading 2 -->
-                    <h3 class="heading-2">Komentar</h3>
-                    <!-- Comments start -->
-                    <ul class="comments">
-                        <li>
-                            <div class="comment">
-                                <div class="comment-author">
-                                    <a href="#">
-                                        <img src="<?php echo base_url() ?>assets/img/avatar/avatar-3.jpg" alt="comments-user">
-                                    </a>
-                                </div>
-                                <?php foreach($tampil as $shopdetail) {
-                                    $id = $shopdetail->id_komentar;
-                                ?>
-                                <div class="comment-content">
-                                    <div class="comment-meta">
-                                        <h6>
-                                            Sendi Dwi Saputra
-                                            <span class="float-right">11/28/2018
-                                            <a data-toggle="modal" data-target="#balas" style="color: blue;">Balasan</a>
-                                            <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
-                                        </h6>
-                                    </div>
-                                    <P><?php echo $shopdetail->isi_komentar ?></P>
-                                </div>
-                        <!-- The Modal hapus -->
-                            <div class="modal fade" id="hapus" style="top: 15%;">
-                                <div class="modal-dialog modal-md">
-                                    <div class="modal-content">
-                              
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                          <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
-                                        </div>
-                                        
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-                    <?php } ?>
-                    <!-- the end modal hapus -->
-                </div>
-            </li>
-        </ul>
-                    <!-- Contact 2 start -->
-                    <div class="contact-2 ca mb-50"><br><br><br>
-                        <h3 class="heading">Ikut Berdiskusi...</h3>
-                            <form action="<?php echo base_url().'shop_detail_penjual/komentar'?>" method="post" enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="form-group message col-md-12">
-                                    <input class="form-control" name="isi_komentar" placeholder="Tuliskan Pesanmu" style="color: #333;">
-                                </div>
-                                <div class="send-btn col-md-12">
-                                    <button type="submit" class="btn btn-md button-theme">Kirim Pesan</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
 
             <!--   start modal balasan -->
 
-            <div class="modal fade" id="balas" style="top: 15%;">
-                <div class="modal-dialog modal-md">
-                    <div class="modal-content">
-                        <form action="<?php echo base_url().'shop_detail_penjual/balas'?>" method="post" enctype="multipart/form-data">
-                                <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Balas</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                                        
-                                <!-- Modal body -->
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="comment">Comment:</label>
-                                <input type="text" class="form-control" rows="5" id="comment" name="balas">
-                            </div>
-                        </div>
-                                        
-                                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-success">Kirim</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
                     <!--   end start modal balasan -->
             <div class="col-lg-4 col-md-12">
@@ -237,9 +146,9 @@
                         <br>
                         <center><h4 class="title"><?php echo $shopdetail->nama_pemilik ?></h4></center><br>
                         <div class="location" style="margin-top: 3%;">
-                            <!-- <a href="properties-details.html"> -->
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
-                          <!--   </a> -->
+                            <li>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; <?php echo $shopdetail->kabupaten ?>
+                            </li>
                         </div><br>
                         <ul class="facilities-list clearfix">
                              <li>
