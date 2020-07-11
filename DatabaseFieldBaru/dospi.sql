@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Apr 2020 pada 14.20
+-- Waktu pembuatan: 11 Jul 2020 pada 08.12
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.8
 
@@ -37,7 +37,7 @@ CREATE TABLE `data_hewan` (
   `jenis_kelamin` varchar(50) NOT NULL,
   `id_makanan` int(11) NOT NULL,
   `warna_hewan` varchar(50) NOT NULL,
-  `deskripsi` varchar(9999) NOT NULL,
+  `deskripsi` text NOT NULL,
   `harga_hewan` varchar(50) NOT NULL,
   `nama_pemilik` varchar(100) NOT NULL,
   `rt_rw` varchar(20) NOT NULL,
@@ -52,9 +52,7 @@ CREATE TABLE `data_hewan` (
 --
 
 INSERT INTO `data_hewan` (`id_datahewan`, `id_kategori`, `id_jenis`, `ukuran_hewan`, `berat_hewan`, `jenis_kelamin`, `id_makanan`, `warna_hewan`, `deskripsi`, `harga_hewan`, `nama_pemilik`, `rt_rw`, `kabupaten`, `kode_pos`, `id_gambar`, `tanggal_tambah`) VALUES
-(1, 0, 0, '10x2x1', 125, 'Jantan', 0, 'hitam', 'hhhhhhhhhhhhggggggggggggg', '120.000.000', 'aku', '1/1/1/haha', 'malang', 123456, 0, '2020-03-02'),
-(2, 0, 0, '9x9x9', 200, 'Jantan', 0, 'hitam', 'ini adalah upin dan ipin', 'Rp.50.000.000', 'dia', '3/3/3', 'trenggalek', 999, 0, '2020-03-04'),
-(3, 0, 0, '', 0, 'Jantan', 0, '', '', '', '', '', '', 0, 0, '0000-00-00');
+(1, 1, 1, '20x3x3', 500, 'Betina', 1, 'mejiku', 'dan sayangmu, setulus pesanmu kepadaku engkau kan menunggu', 'Rp.150.000.000', 'amelia rizky', 'rt 18, rw 05 Dongko', 'trenggalek', 6666666, 2, '2020-06-16');
 
 -- --------------------------------------------------------
 
@@ -72,20 +70,11 @@ CREATE TABLE `gambar_hewan` (
 --
 
 INSERT INTO `gambar_hewan` (`id_gambar`, `gambar`) VALUES
-(1, 'file_1584456087.jpg'),
-(2, 'file_15844560871.jpg'),
-(3, 'file_15844560872.jpg'),
-(4, 'file_15844560873.jpg'),
-(5, 'file_15844560874.jpg'),
-(6, '8.jpg'),
-(7, '9.jpg'),
-(8, '10.jpg'),
-(9, '111.jpg'),
-(10, '121.jpg'),
-(11, '24.jpg'),
-(12, '24.jpg'),
-(13, '24.jpg'),
-(14, '24.jpg');
+(1, 'avatar-9.jpg'),
+(2, 'avatar-8.jpg'),
+(3, 'avatar-7.jpg'),
+(4, 'avatar-6.jpg'),
+(5, 'avatar-51.jpg');
 
 -- --------------------------------------------------------
 
@@ -131,9 +120,7 @@ CREATE TABLE `jenis_hewan` (
 --
 
 INSERT INTO `jenis_hewan` (`id_jenis`, `jenis_hewan`, `deskripsi`, `id_kategori`, `foto`) VALUES
-(1, 'lll', '', 0, 'file_15844560874.jpg'),
-(2, 'kambing etawa', '', 0, '121.jpg'),
-(3, '', '', 0, '24.jpg');
+(1, 'sapi Halu', '', 0, 'avatar-51.jpg');
 
 -- --------------------------------------------------------
 
@@ -151,9 +138,7 @@ CREATE TABLE `kategori_hewan` (
 --
 
 INSERT INTO `kategori_hewan` (`id_kategori`, `nama_hewan`) VALUES
-(1, 'Sapi'),
-(2, 'Sapi'),
-(3, 'Sapi');
+(1, 'Sapi');
 
 -- --------------------------------------------------------
 
@@ -202,6 +187,13 @@ CREATE TABLE `layanan_kami` (
   `id_gambar_layanan` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `layanan_kami`
+--
+
+INSERT INTO `layanan_kami` (`id_layanan`, `judul`, `konten`, `id_gambar_layanan`) VALUES
+(1, 'Layanan kamiii', '', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -210,16 +202,20 @@ CREATE TABLE `layanan_kami` (
 
 CREATE TABLE `tata_cara` (
   `id_tatacara` int(11) NOT NULL,
-  `judul` varchar(200) NOT NULL,
-  `konten` varchar(1000) NOT NULL
+  `judulpembelian` varchar(200) NOT NULL,
+  `pembelian` text NOT NULL,
+  `judulpenjualan` varchar(1000) NOT NULL,
+  `penjualan` text NOT NULL,
+  `judulsyarat` varchar(200) NOT NULL,
+  `syaratketentuan` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tata_cara`
 --
 
-INSERT INTO `tata_cara` (`id_tatacara`, `judul`, `konten`) VALUES
-(1, 'syarat dan ketentuan', 'sendi adalah orang yang selalu menjadi kapten di saat kita bermain sepakbola');
+INSERT INTO `tata_cara` (`id_tatacara`, `judulpembelian`, `pembelian`, `judulpenjualan`, `penjualan`, `judulsyarat`, `syaratketentuan`) VALUES
+(1, 'Cara Pembelian', 'Cara pembelian/ order barang di DOSPI  adalah sebagai berikut :</p>\r\n                                <p>1.  Lakukan login/registrasi sebagai pembeli,\r\n                                <br>2. Masuk ke bagian Shop,\r\n                                <br>3. Cari hewan yang ingin di beli,\r\n                                <br>4. Klik gambar yang tampil dan klik DETAIL,\r\n                                <br>5. Lalu klik beli sekarang,\r\n                                <br>6. Lalu pembeli akan diarahkan ke bagian Checkout,\r\n                                <br>7. Untuk selanjutnya, pembeli bisa mengklik Pesan untuk melanjutkan pesanan dan Klik cancel jika ingin membatalkan pembelian\r\n                                <br>8. Ketika pembeli mengklik pesan maka pembeli akan diarahkan ke halaman pembayaran,\r\n                                <br>9. Setelah selesai melakukan pembayaran,pembeli akan di arahkan ke halaman pemesanan,\r\n                                <br>9. Dihalaman pemesanan klik konfirmasi pembayaran, dan mengisikan konfirmasi pembayaran dan juga bukti pembayaran. kemudian klik kirim\r\n                                <br>10. Selanjutnya akan kembali ke halaman pemesanan dengan status sudah terbayar, klik deal untuk melanjutkan pembelian dan cancel untuk mengcancel pembelian\r\n                                <br>11. Lalu selanjutnya kehalaman Faktur, Klik detail untuk melihat detail hewan yang telah dibeli dan Klik selesai untuk mengakhiri pembelian.\r\n                                </p>\r\n                                <p>Semisal pembeli menyatakan deal akan hewan yang akan dibeli, kita sebagai admin akan mengirim DP awal yang telah di transfer di rekening DOSPI kepada si penjual. Semisal pembeli tidak cocok dengan hewan yang akan dibeli pembeli mempunyai hak untuk mengcancel pembelian tersebut Dan Admin akan mengembalikan Uang Dp yang pernah dikirim oleh pembeli ke rekening Dospi', 'Cara Penjualan', 'Cara penjualan hewan ternak di DOSPI:</p>\r\n                        <p>1. Lakukan login/registrasi sebagai penjual.\r\n                            <br>2. Masuk ke menu jual ternakmu disini.\r\n                            <br>3. Pilih gambar hewan yang akan dijual dan menuliskan deskripsi hewan yang terdiri dari :\r\n                        </p>\r\n                        <p>-Harga,\r\n                           <br>-Nama/jenis hewan,\r\n                           <br>-Jenis kelamin hewan,\r\n                           <br>-Panjang lebar dan tinggi hewan,\r\n                           <br>-Berat hewan,\r\n                           <br>-Jenis makanan yang dimakan hewan (combor/tidak),\r\n                           <br>-Warna hewan,\r\n                           <br>-Menyertakan 5 foto sapi/kambing yang akan di jual (2 Foto Depan Belakang Sapi/Kambing, 2 Foto Samping Kanan Samping Kiri Sapi/Kambing, 1 Foto Makanan Ternak Yang Biasa Hewan Itu Makan).\r\n                        </p>\r\n                        <p>4. Menyertakan alamat lengkap tentang keberadaan sapi/kambing ( Disediakan maps ).\r\n                        <br>5. Setelah data hewan sudah terisi klik jual ternakmu disini, dan anda bisa melihat Daftar Hewan yang anda jual  di halaman Produk saya dan anda juga bisa melihat hewan anda di shop Dospi.', 'Syarat & Ketentuan', 'Adapun syarat dan ketentuan terkait dengan pembeliannya adalah sebagai berikut :\r\n                        <li> Apabila harga sapi lebih dari 25 juta pembeli harus mengirimkan 27%  Dari total harga sebagai Dp</li> \r\n                        <li> Apabila harga sapi dibawah 25 Juta pembeli harus mengirimkan 21%  dari total harga sebagai Dp</li> \r\n                        <li> Apabila harga kambing diatas 5 juta maka pembeli harus mengirim dp 16% dari total harga sebagai Dp</li>\r\n                        <li> Apabila harga kambing dibawah 5 juta maka pembeli harus mengirim dp 10.5% dari total harga sebagai Dp</li>\r\n                        <li> Untuk pengiriman hewan tersebut menjadi kewajiban dari pembeli</li>');
 
 -- --------------------------------------------------------
 
@@ -262,9 +258,15 @@ CREATE TABLE `tb_index` (
   `id_kontak` int(11) NOT NULL,
   `id_layanan` int(11) NOT NULL,
   `id_rating` int(11) NOT NULL,
-  `id_rekomendasi` int(11) NOT NULL,
   `id_faq` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_index`
+--
+
+INSERT INTO `tb_index` (`id_index`, `logo`, `id_imageslider`, `id_datahewan`, `id_tentang`, `id_kontak`, `id_layanan`, `id_rating`, `id_faq`) VALUES
+(1, '', 0, 0, 3, 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -277,6 +279,7 @@ CREATE TABLE `tb_komentar` (
   `id_user` int(11) NOT NULL,
   `id_datahewan` int(11) NOT NULL,
   `isi_komentar` text NOT NULL,
+  `isi_balasan` text NOT NULL,
   `waktu` time(6) NOT NULL,
   `tanggal` date NOT NULL,
   `status` varchar(200) NOT NULL
@@ -286,11 +289,11 @@ CREATE TABLE `tb_komentar` (
 -- Dumping data untuk tabel `tb_komentar`
 --
 
-INSERT INTO `tb_komentar` (`id_komentar`, `id_user`, `id_datahewan`, `isi_komentar`, `waktu`, `tanggal`, `status`) VALUES
-(9, 0, 1, 'coba1', '00:00:00.000000', '0000-00-00', ''),
-(10, 0, 2, 'coba1', '00:00:00.000000', '0000-00-00', ''),
-(14, 0, 1, 'this is me', '00:00:00.000000', '0000-00-00', ''),
-(15, 0, 1, 'luweee', '00:00:00.000000', '0000-00-00', '');
+INSERT INTO `tb_komentar` (`id_komentar`, `id_user`, `id_datahewan`, `isi_komentar`, `isi_balasan`, `waktu`, `tanggal`, `status`) VALUES
+(20, 0, 1, 'coba1', 'huah', '00:00:00.000000', '0000-00-00', ''),
+(21, 0, 12, 'sayang', '', '00:00:00.000000', '0000-00-00', ''),
+(22, 0, 0, 'gggggggggggggggggggggggg', '', '00:00:00.000000', '0000-00-00', ''),
+(23, 0, 12, 'hai', '', '00:00:00.000000', '0000-00-00', '');
 
 -- --------------------------------------------------------
 
@@ -308,9 +311,7 @@ CREATE TABLE `tb_makanan` (
 --
 
 INSERT INTO `tb_makanan` (`id_makanan`, `nama_makanan`) VALUES
-(1, 'combor'),
-(2, 'alami'),
-(3, '');
+(1, 'alami');
 
 -- --------------------------------------------------------
 
@@ -340,6 +341,7 @@ CREATE TABLE `tb_pesan` (
   `id_pesan` int(11) NOT NULL,
   `id_penjual` int(11) NOT NULL,
   `id_pembeli` int(11) NOT NULL,
+  `id_datahewan` int(11) NOT NULL,
   `isi_pesan` text NOT NULL,
   `waktu` time NOT NULL,
   `tanggal` date NOT NULL,
@@ -366,19 +368,6 @@ CREATE TABLE `tb_rating` (
 INSERT INTO `tb_rating` (`id_rating`, `jumlah_rating`, `komentar`, `id_user`) VALUES
 (5, '', 'sapi baguss', 0),
 (6, '', 'kemengg', 0);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tb_rekomendasi`
---
-
-CREATE TABLE `tb_rekomendasi` (
-  `id_rekomendasi` int(11) NOT NULL,
-  `judul` varchar(200) NOT NULL,
-  `konten` varchar(1000) NOT NULL,
-  `id_datahewan` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -423,8 +412,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `foto_profil`, `username`, `password`, `email`, `jenis_kelamin`, `no_tlp`, `foto_ktp`, `status`) VALUES
-(86, 'file_1584432013.jpg', 'Wahyu  Rahmadani', 12345, 'bagongchanel75@gmail.com', 'laki-laki', '085233170475', 'file_1584361662.jpeg', '1'),
-(87, 'file_1584422133.jpg', 'Winda Adelia', 20411, 'windaadelia12@gmail.com', 'perempuan', '087699244123', 'file_1584421859.jpg', '2');
+(86, 'file_1584432013.jpg', 'Wahyu  Rahmadani', 12345, 'bagongchanel75@gmail.com', 'laki-laki', '085233170475', 'file_1584361662.jpeg', '1');
 
 --
 -- Indexes for dumped tables
@@ -539,12 +527,6 @@ ALTER TABLE `tb_rating`
   ADD PRIMARY KEY (`id_rating`);
 
 --
--- Indeks untuk tabel `tb_rekomendasi`
---
-ALTER TABLE `tb_rekomendasi`
-  ADD PRIMARY KEY (`id_rekomendasi`);
-
---
 -- Indeks untuk tabel `tb_tentang`
 --
 ALTER TABLE `tb_tentang`
@@ -564,13 +546,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `data_hewan`
 --
 ALTER TABLE `data_hewan`
-  MODIFY `id_datahewan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_datahewan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `gambar_hewan`
 --
 ALTER TABLE `gambar_hewan`
-  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `gambar_layanan`
@@ -588,13 +570,13 @@ ALTER TABLE `image_slider`
 -- AUTO_INCREMENT untuk tabel `jenis_hewan`
 --
 ALTER TABLE `jenis_hewan`
-  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori_hewan`
 --
 ALTER TABLE `kategori_hewan`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `konfirmasi_bayar`
@@ -606,13 +588,13 @@ ALTER TABLE `konfirmasi_bayar`
 -- AUTO_INCREMENT untuk tabel `kontak_dospi`
 --
 ALTER TABLE `kontak_dospi`
-  MODIFY `id_kontak` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kontak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `layanan_kami`
 --
 ALTER TABLE `layanan_kami`
-  MODIFY `id_layanan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_layanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tata_cara`
@@ -636,19 +618,19 @@ ALTER TABLE `tb_faq`
 -- AUTO_INCREMENT untuk tabel `tb_index`
 --
 ALTER TABLE `tb_index`
-  MODIFY `id_index` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_index` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_komentar`
 --
 ALTER TABLE `tb_komentar`
-  MODIFY `id_komentar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_komentar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_makanan`
 --
 ALTER TABLE `tb_makanan`
-  MODIFY `id_makanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_makanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_pemesanan`
@@ -667,12 +649,6 @@ ALTER TABLE `tb_pesan`
 --
 ALTER TABLE `tb_rating`
   MODIFY `id_rating` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT untuk tabel `tb_rekomendasi`
---
-ALTER TABLE `tb_rekomendasi`
-  MODIFY `id_rekomendasi` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_tentang`
