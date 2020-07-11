@@ -5,7 +5,7 @@
         <div class="breadcrumb-areas">
             <h1>Rincian Hewan</h1>
             <ul class="breadcrumbs">
-                <li><a href="index-3pembeli.html">Home</a></li>
+            <li><a href="<?php echo base_url('halaman_pembeli');?>"class="nav-link">Home</a></li>
                 <li class="active">Rincian Hewan</li>
             </ul>
         </div>
@@ -79,6 +79,9 @@
                         <ul class="nav nav-tabs" id="carTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active show" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="false">Deskripsi</a>
+                                <?php foreach($tampil as $shopdetail) {
+
+                                ?>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="6-tab" data-toggle="tab" href="#6" role="tab" aria-controls="6" aria-selected="true">Informasi</a>
@@ -93,8 +96,7 @@
                                     <h3 class="heading-2">
                                         Sapi
                                     </h3>
-                                    <p>Sapi adalah hewan ternak anggota suku Bovidae dan anak suku Bovinae. Sapi yang telah dikebiri dan biasanya digunakan untuk membajak sawah dinamakan lembu. Sapi dipelihara terutama untuk dimanfaatkan susu dan dagingnya sebagai pangan manusia. Hasil sampingannya seperti kulit, jeroan, tanduk, dan kotorannya juga dimanfaatkan untuk berbagai keperluan manusia. Di sejumlah tempat, sapi juga dipakai sebagai penggerak alat transportasi, pengolahan lahan tanam (bajak), dan alat industri lain (seperti peremas tebu). Karena banyak kegunaan ini, sapi telah menjadi bagian dari berbagai kebudayaan manusia sejak lama.</p>
-                                    <p>Kebanyakan sapi ternak merupakan keturunan dari jenis liar yang dikenal sebagai aurochs (dalam bahasa Jerman berarti "sapi kuno", nama ilmiah: Bos primigenius[a]), yang sudah punah di Eropa sejak 1627. Namun, terdapat beberapa spesies sapi liar lain yang keturunannya didomestikasi, termasuk sapi bali yang juga diternakkan di Indonesia.</p>
+                                    <p><?php echo $shopdetail->deskripsi?></p>
                                 </div>
                             </div>
 
@@ -106,6 +108,8 @@
                                     
                                                 <p>Sapi brahman adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>
                                                 <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan.</p>
+                                                <?php } ?>
+
                                 </div>
                             </div>
                             <div class="tab-pane fade " id="5" role="tabpanel" aria-labelledby="5-tab">
@@ -118,99 +122,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Heading 2 -->
-                    <h3 class="heading-2">Komentar</h3>
-                    <!-- Comments start -->
-                    <ul class="comments">
-                        <li>
-                            <div class="comment">
-                                <div class="comment-author">
-                                    <a href="#">
-                                        <img src="<?php echo base_url (); ?>assets/img/avatar/avatar-1.jpg" alt="comments-user">
-                                    </a>
-                                </div>
-                                 <?php foreach($tampil as $shopdetail) {
-                                    $id = $shopdetail->id_komentar;
-                                ?>
-                                <div class="comment-content">
-                                    <div class="comment-meta">
-                                        <h6>
-                                            Galih Rakasiwa
-                                            <span class="float-right">11/28/2018
-                                            <a data-toggle="modal" data-target="#balas" style="color: blue;">Balasan</a>
-                                            <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
-                                        </h6>
-                                    </div>
-                                    <p><?php echo $shopdetail->isi_komentar ?></p>
-                                </div>
-                                <!-- The Modal hapus -->
-                            <div class="modal fade" id="hapus" style="top: 15%;">
-                                <div class="modal-dialog modal-md">
-                                    <div class="modal-content">
-                              
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                          <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
-                                        </div>
-                                        
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-                    <?php } ?>
-                    <!-- the end modal hapus -->
-                </div>
-            </li>
-        </ul>
-                            
-                    <!-- Contact 2 start -->
-                    <div class="contact-2 ca mb-50">
-                        <h3 class="heading">Ikut Berdiskusi...</h3>
-                        <form action="<?php echo base_url().'shop_detail_pembeli/komentar'?> " method="post" enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="form-group message col-md-12">
-                                    <input class="form-control" name="isi_komentar" placeholder="Tuliskan Pesanmu" style="color: #333;">
-                                </div>
-                                <div class="send-btn col-md-12">
-                                    <button type="submit" class="btn btn-md button-theme">Kirim Pesan</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-              <!--   start modal balasan -->
-            <div class="modal fade" id="balas" style="top: 15%;">
-                <div class="modal-dialog modal-md">
-                    <div class="modal-content">
-                      <!--  <form action="<?php echo base_url().'shop_detail_pembeli/balas'?>" method="post" enctype="multipart/form-data"> -->
-                                <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Balas</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                                        
-                                <!-- Modal body -->
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="comment">Comment:</label>
-                                <input type="text" class="form-control" rows="5" id="comment" name="balas">
-                            </div>
-                        </div>                
-                                        <!-- Modal footer -->
-                                 <div class="modal-footer">
-                            <button type="submit" class="btn btn-success">Kirim</button>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -285,12 +197,68 @@
                 
                         <!--===================================================-->
                           <!--End Modal Chat Penjual-->
+                          
                     </div><br>
                     
                     <!-- Beli Start -->
                      <div style="text-align: center;">
                             <center><h3 class="belirp" style="margin-bottom: 2%;">Rp&nbsp; <?php echo $shopdetail->harga_hewan ?></h3></center>
                             <button data-target=#modalConfirmWarning" data-toggle="modal" class="btn btn-success col-md">Beli Sekarang</button>
+                            <!-- Properties details page end -->
+<!--Default Bootstrap Modal-->
+                    <!--===================================================-->
+                    <div class="modal fade" id="belisekarang" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content lg-12">
+
+                                <!--Modal header-->
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+                                    <h5 class="modal-title">Checkout <span class="fa fa-check"></span></h5>
+                                </div>
+                                <!-- modal body -->
+                                    <div class="dashboard-list">
+                                            <table class="manage-table">
+                                                <tbody>
+                                                    <h6 style="margin-left: 66%; position: absolute; font-size: 16px;">Tanggal:</h6>
+                                                    <td class="expire-date" style="margin-left: 80%; position: absolute; font-size: 15px;">11.02.2020</td> 
+                                                <tr class="responsive-table">
+                                                    <td class="listing-photoo">
+                                                        <img src="assets/img/properties/properties-1.jpg" alt="listing-photo" class="img-fluid">
+                                                    </td>
+                                                    
+                                                    <td class="title-container">
+                                                        <h2><a href="#">Sapi Brahman</a></h2>
+                                                        <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> 3214 Sempu Banyuwangi, </h5>
+                                                        <h6 class="table-property-price">Rp. 70.000.000</h6>
+                                                    </td> 
+                                                </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <address class="address-info">
+                                                        <p>No.Order&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 001</p>
+                                                        <p>Code Hewan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1</p>
+                                                        <p class="strong">Total Harga Hewan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rp. 50.000.000</p>
+                                                        <p>Sub Total DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;27%</p>
+                                                        <p>Total Pembayaran Dp&nbsp;&nbsp;&nbsp;: Rp. 13.500.000</p>
+                                                    </address>
+                                                </div>
+                                <!--Modal footer-->
+                                <div class="modal-footer">
+                                    <button data-dismiss="modal" class="btn btn-danger" type="button" style="border-radius: 15%;">Cancel</button>
+                                    <button class="btn btn-success" style="border-radius: 15%;"><a href="pembelian-proses.html" style="color: #fff;">Pesan</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--===================================================-->
+                      <!--End Default Bootstrap Modal-->
+
+
+
                      </div>
 
                     <!-- End Beli -->
