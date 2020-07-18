@@ -203,7 +203,7 @@
                     <!-- Beli Start -->
                      <div style="text-align: center;">
                             <center><h3 class="belirp" style="margin-bottom: 2%;">Rp&nbsp; <?php echo $shopdetail->harga_hewan ?></h3></center>
-                            <button data-target=#modalConfirmWarning" data-toggle="modal" class="btn btn-success col-md">Beli Sekarang</button>
+                            <button data-target="#belisekarang" data-toggle="modal" class="btn btn-success col-md" style="margin-top: 1%;">Beli Sekarang</button>
                             <!-- Properties details page end -->
 <!--Default Bootstrap Modal-->
                     <!--===================================================-->
