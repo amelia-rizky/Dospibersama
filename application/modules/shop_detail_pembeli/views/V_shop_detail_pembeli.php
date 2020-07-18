@@ -141,7 +141,7 @@
                         <center><h4 class="title"><?php echo $shopdetail->nama_pemilik ?></h4></center><br>
                         <div class="location" style="margin-top: 3%;">
                             <!-- <a href="properties-details.html"> -->
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $shopdetail->kabupaten  ?>
                           <!--   </a> -->
                         </div><br>
                         <ul class="facilities-list clearfix">
@@ -198,7 +198,6 @@
                         <!--===================================================-->
                           <!--End Modal Chat Penjual-->
                           
-                    </div><br>
                     
                     <!-- Beli Start -->
                      <div style="text-align: center;">
@@ -220,17 +219,17 @@
                                     <div class="dashboard-list">
                                             <table class="manage-table">
                                                 <tbody>
-                                                    <h6 style="margin-left: 66%; position: absolute; font-size: 16px;">Tanggal:</h6>
-                                                    <td class="expire-date" style="margin-left: 80%; position: absolute; font-size: 15px;">11.02.2020</td> 
+                                                    <h6 style="margin-left: 66%; position: absolute; font-size: 16px;"><?php echo $shopdetail->tanggal_tambah ?></h6>
+                                                    
                                                 <tr class="responsive-table">
                                                     <td class="listing-photoo">
                                                         <img src="assets/img/properties/properties-1.jpg" alt="listing-photo" class="img-fluid">
                                                     </td>
                                                     
                                                     <td class="title-container">
-                                                        <h2><a href="#">Sapi Brahman</a></h2>
-                                                        <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> 3214 Sempu Banyuwangi, </h5>
-                                                        <h6 class="table-property-price">Rp. 70.000.000</h6>
+                                                        <h2><a href="#"><?php echo $shopdetail->jenis_hewan ?></a></h2>
+                                                        <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i><?php echo $shopdetail->kabupaten ?> </h5>
+                                                        <h6 class="table-property-price"><?php echo $shopdetail->harga_hewan ?></h6>
                                                     </td> 
                                                 </tr>
                                                 </tbody>
@@ -241,7 +240,7 @@
                                                     <address class="address-info">
                                                         <p>No.Order&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 001</p>
                                                         <p>Code Hewan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1</p>
-                                                        <p class="strong">Total Harga Hewan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rp. 50.000.000</p>
+                                                        <p class="strong">Harga hewan :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $shopdetail->harga_hewan ?></p>
                                                         <p>Sub Total DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;27%</p>
                                                         <p>Total Pembayaran Dp&nbsp;&nbsp;&nbsp;: Rp. 13.500.000</p>
                                                     </address>
