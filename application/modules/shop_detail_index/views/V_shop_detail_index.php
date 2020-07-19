@@ -4,7 +4,7 @@
         <div class="breadcrumb-areas">
             <h1>Rincian Hewan</h1>
             <ul class="breadcrumbs">
-                <li><a href="index-3.html">Home</a></li>
+                <li><a href="halaman_index">Home</a></li>
                 <li class="active">Rincian Hewan</li>
             </ul>
         </div>
@@ -489,41 +489,41 @@
                     <div class="widget recent-properties">
                         <h3 class="sidebar-title">Hewan Terbaru</h3>
                         <div class="media mb-4">
-                            <a class="pr-3" href="properties-details.html">
+                            <a class="pr-3" href="shop_list_index">
                                 <img class="media-object" src="assets/img/properties/small-properties-1.jpg" alt="small-properties">
                             </a>
                             <div class="media-body align-self-center">
                                 <h5>
-                                    <a href="properties-grid-leftside.html">Sapi Limousin</a>
+                                    <a href="shop_list_index">Sapi Limousin</a>
                                 </h5>
                                 <div class="listing-post-meta">
-                                    <a href="properties-grid-leftside.html"><i class="fa fa-calendar"></i> Oct 27, 2018 </a> | Rp. 87.500.000
+                                    <a href="shop_list_index"><i class="fa fa-calendar"></i> Oct 27, 2018 </a> | Rp. 87.500.000
                                 </div>
                             </div>
                         </div>
                         <div class="media mb-4">
-                            <a class="pr-3" href="properties-grid-leftside.html">
+                            <a class="pr-3" href="shop_list_index">
                                 <img class="media-object" src="assets/img/properties/small-properties-2.jpg" alt="small-properties">
                             </a>
                             <div class="media-body align-self-center">
                                 <h5>
-                                    <a href="properties-grid-leftside.html">Sapi Bali</a>
+                                    <a href="shop_list_index">Sapi Bali</a>
                                 </h5>
                                 <div class="listing-post-meta">
-                                    <a href="properties-grid-leftside.html"><i class="fa fa-calendar"></i> Oct 27, 2018 </a> | Rp. 23.500.700
+                                    <a href="shop_list_index"><i class="fa fa-calendar"></i> Oct 27, 2018 </a> | Rp. 23.500.700
                                 </div>
                             </div>
                         </div>
                         <div class="media">
-                            <a class="pr-3" href="properties-grid-leftside.html">
+                            <a class="pr-3" href="shop_list_index">
                                 <img class="media-object" src="assets/img/properties/small-properties-3.jpg" alt="small-properties">
                             </a>
                             <div class="media-body align-self-center">
                                 <h5>
-                                    <a href="properties-grid-leftside.html">Sapi Brahman</a>
+                                    <a href="shop_list_index">Sapi Brahman</a>
                                 </h5>
                                 <div class="listing-post-meta">
-                                    <a href="properties-grid-leftside.html"><i class="fa fa-calendar"></i> Oct 27, 2018 </a> | Rp. 47.000.000
+                                    <a href="shop_list_index"><i class="fa fa-calendar"></i> Oct 27, 2018 </a> | Rp. 47.000.000
                                 </div>
                             </div>
                         </div>

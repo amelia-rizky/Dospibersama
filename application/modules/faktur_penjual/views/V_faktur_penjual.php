@@ -59,7 +59,7 @@
                                                             <td>001</td>
                                                             <td class="text-center">King Zainal Aladin</td>
                                                             <td class="text-center">Deposit</td>
-                                                            <td><a href="faktur-pembelian.html" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
+                                                            <td><a href="pembelian_penjual" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
                                                             <td>16-02-2020</td>
                                                             <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
                                                         </tr>
@@ -68,7 +68,7 @@
                                                             <td>002</td>
                                                             <td class="text-center">King Zainal Aladin</td>
                                                             <td class="text-center">Deposit</td>
-                                                            <td><a href="faktur-pembelian.html" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
+                                                            <td><a href="pembelian_penjual" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
                                                             <td>16-02-2020</td>
                                                             <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
                                                         </tr>
@@ -77,7 +77,7 @@
                                                             <td>003</td>
                                                             <td class="text-center">King Zainal Aladin</td>
                                                             <td class="text-center">Deposit</td>
-                                                            <td><a href="faktur-pembeli.html" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
+                                                            <td><a href="pembelian_penjual" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
                                                             <td>16-02-2020</td>
                                                             <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
                                                         </tr>
@@ -86,7 +86,7 @@
                                                             <td>004</td>
                                                             <td class="text-center">King Zainal Aladin</td>
                                                             <td class="text-center">Deposit</td>
-                                                            <td><a href="faktur-pembelian.html" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
+                                                            <td><a href="pembelian_penjual" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
                                                             <td>16-02-2020</td>
                                                             <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
                                                         </tr>
@@ -95,7 +95,7 @@
                                                             <td>005</td>
                                                             <td class="text-center">King Zainal Aladin</td>
                                                             <td class="text-center">Deposit</td>
-                                                            <td><a href="faktur-pembelian.html" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
+                                                            <td><a href="pembelian_penjual" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
                                                             <td>16-02-2020</td>
                                                             <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
                                                         </tr>
