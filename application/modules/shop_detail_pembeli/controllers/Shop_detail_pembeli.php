@@ -26,7 +26,7 @@ class Shop_detail_pembeli extends MX_Controller {
 	function detail($id_datahewan){
 		
 		$data = array(
-			'namamodule' 	=> "shop_detail_penmbeli",
+			'namamodule' 	=> "shop_detail_pembeli",
 			'namafileview' 	=> "V_shop_detail_pembeli",
 			'tampil'		=> $this->m_shop_detail_pembeli->detail_hewan($id_datahewan),
 		);
