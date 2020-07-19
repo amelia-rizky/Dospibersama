@@ -70,7 +70,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="property-box">
                     <div class="property-thumbnail">
-                        <a href="properties-details.html" class="property-img">
+                        <a href="shop_detail_index" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.97.580.000</div>
                             <img class="d-block w-100 h-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" alt="properties">
@@ -78,10 +78,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="properties-details.html">Sapi Limosin</a>
+                            <a href="shop_detail_index">Sapi Limosin</a>
                         </h1>
                         <div class="location">
-                            <a href="properties-details.html">
+                            <a href="shop_detail_index">
                                 <i class="flaticon-pin"></i>2345 Kaliploso Malang,
                             </a>
                         </div>
@@ -109,7 +109,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="property-box">
                     <div class="property-thumbnail">
-                        <a href="properties-details.html" class="property-img">
+                        <a href="shop_detail_index" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.115.000.000</div>
                             <img class="d-block w-100 h-100" src="assets/img/properties/Sapi Brahman Putih.jpg" alt="properties">
@@ -117,10 +117,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="properties-details.html">Sapi Brahman</a>
+                            <a href="shop_detail_index">Sapi Brahman</a>
                         </h1>
                         <div class="location">
-                            <a href="properties-details.html">
+                            <a href="shop_detail_index">
                                 <i class="flaticon-pin"></i>675 Rejo Agung Banyuwangi,
                             </a>
                         </div>
@@ -147,7 +147,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="property-box">
                     <div class="property-thumbnail">
-                        <a href="properties-details.html" class="property-img">
+                        <a href="shop_detail_index" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.75.000.000</div>
                             <img class="d-block w-100" src="assets/img/properties/Sapi Simmental Coklat.jpg" alt="properties">
@@ -155,10 +155,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="properties-details.html">Sapi Simmental</a>
+                            <a href="shop_detail_index">Sapi Simmental</a>
                         </h1>
                         <div class="location">
-                            <a href="properties-details.html">
+                            <a href="shop_detail_index">
                                 <i class="flaticon-pin"></i>0987 Curah Kates Jember,
                             </a>
                         </div>
@@ -185,7 +185,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="property-box">
                     <div class="property-thumbnail">
-                        <a href="properties-details.html" class="property-img">
+                        <a href="shop_detail_index" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.5.800.000</div>
                             <img class="d-block w-100" src="assets/img/properties/Kambing Etawa.jpg" alt="properties">
@@ -193,10 +193,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="properties-details.html">Kambing Etawa</a>
+                            <a href="shop_detail_index">Kambing Etawa</a>
                         </h1>
                         <div class="location">
-                            <a href="properties-details.html">
+                            <a href="shop_detail_index">
                                 <i class="flaticon-pin"></i>1276 Rogojampi Banyuwangi,
                             </a>
                         </div>
@@ -223,7 +223,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="property-box">
                     <div class="property-thumbnail">
-                        <a href="properties-details.html" class="property-img">
+                        <a href="shop_detail_index" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.2.750.000</div>
                             <img class="d-block w-100" src="assets/img/properties/Kambing Jawarandu.jpg" alt="properties">
@@ -231,10 +231,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="properties-details.html">Kambing Jawa Randu</a>
+                            <a href="shop_detail_index">Kambing Jawa Randu</a>
                         </h1>
                         <div class="location">
-                            <a href="properties-details.html">
+                            <a href="shop_detail_index">
                                 <i class="flaticon-pin"></i>123 Sempolan Jember,
                             </a>
                         </div>
@@ -261,7 +261,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="property-box">
                     <div class="property-thumbnail">
-                        <a href="properties-details.html" class="property-img">
+                        <a href="shop_detail_index" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.4.500.000</div>
                             <img class="d-block w-100" src="assets/img/properties/Kambing Boer.jpg" alt="properties">
@@ -269,10 +269,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="properties-details.html">Kambing Boer</a>
+                            <a href="shop_detail_index">Kambing Boer</a>
                         </h1>
                         <div class="location">
-                            <a href="properties-details.html">
+                            <a href="shop_detail_index">
                                 <i class="flaticon-pin"></i>1657 Jatiroto Pasuruan,
                             </a>
                         </div>
@@ -297,7 +297,7 @@
                 </div>
             </div>
             <div style="margin-left: 78%;">
-                <a href="properties-grid-leftside.html" class="btn btn-white">Selengkapnya&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                <a href="shop_list_index" class="btn btn-white">Selengkapnya&nbsp;<i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
     </div>

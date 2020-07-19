@@ -32,7 +32,7 @@
                                                     </div>
                                                 </div><br><br>
                                                 <div class="bayarproses" style="margin-top: 7%;">
-                                                    <center><button class="btn btn-success"><a href="bookings2.html" style="color: white;">Bayar&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a></button></center>
+                                                    <center><button class="btn btn-success"><a href="pemesanan_pembeli" style="color: white;">Bayar&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a></button></center>
                                                     <br><br><br>
                                                 </div>
                                             </div>
