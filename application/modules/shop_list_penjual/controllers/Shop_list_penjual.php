@@ -21,7 +21,7 @@ class Shop_list_penjual extends MX_Controller {
 			'namafileview' 	=> "V_shop_list_penjual",
 			'tampil'		=> $this->M_shop_list_penjual->tampil(),
 		);
-		echo Modules::run('template/tampilCore4', $data);
+		echo Modules::run('template/tampilCore', $data);
 	
 
 		// PAGINATION LOAD LIBRARI

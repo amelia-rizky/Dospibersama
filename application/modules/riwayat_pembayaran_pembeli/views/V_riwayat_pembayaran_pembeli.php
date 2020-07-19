@@ -61,7 +61,7 @@
                                         </div>
                                         <div class="col-lg-12" style=" margin-top: 4%;">
                                             <div class="send-btn">
-                                                <button type="submit" class="btn btn-outline-success" style="margin-left: 86%;"><a href="shop_list_pembeli">Beli Lagi</button>
+                                                <button type="submit" class="btn btn-outline-success" style="margin-left: 86%;"><a href="properties-grid-leftsidepembeli.html">Beli Lagi</button>
                                             </div>
                                         </div>
                                     </div>
@@ -125,7 +125,7 @@
                                         </div>
                                         <div class="col-lg-12" style=" margin-top: 4%;">
                                             <div class="send-btn">
-                                                <button type="submit" class="btn btn-outline-success" style="margin-left: 86%;"><a href="shop_list_pembeli">Beli Lagi</button>
+                                                <button type="submit" class="btn btn-outline-success" style="margin-left: 86%;"><a href="properties-grid-leftsidepembeli.html">Beli Lagi</button>
                                             </div>
                                         </div>
                                     </div>

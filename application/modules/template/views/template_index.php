@@ -85,6 +85,7 @@
                             <a class="dropdown-item" href="<?php echo base_url('kontak_index'); ?>">Kontak Kami</a>
                             <a class="dropdown-item" href="<?php echo base_url('tata_cara_index'); ?>">Tata Cara Jual & Beli</a>
                             <a class="dropdown-item" href="<?php echo base_url('faq_index'); ?>">faq</a>
+                            <a class="dropdown-item" href="404-2.html">Error</a>
                         </ul>
                     </li>
                     <li >

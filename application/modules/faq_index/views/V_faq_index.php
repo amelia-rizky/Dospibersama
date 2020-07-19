@@ -4,7 +4,7 @@
         <div class="breadcrumb-areas">
             <h1>Faq</h1>
             <ul class="breadcrumbs">
-                <li><a href="halaman_index">Home</a></li>
+                <li><a href="index-3penjual.html">Home</a></li>
                 <li class="active">Faq</li>
             </ul>
         </div>
