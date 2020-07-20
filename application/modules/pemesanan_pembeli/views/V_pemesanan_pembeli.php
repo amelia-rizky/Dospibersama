@@ -86,7 +86,7 @@
                                                 <li>Nomor Telepon/wa : <span> <a href="tel:+79617036705">+79617036705</a></span></li>
                                             </ul>
                                             <div class="konfirmbayar">
-                                               <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>">Konfirmasi Pembayaran</a>
+                                               <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>"> Pembayaran</a>
                                             </div>
 
 

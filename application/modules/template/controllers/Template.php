@@ -25,6 +25,8 @@ class Template extends MX_Controller {
 		$this->load->view('view_template_core4');
 		$this->load->view('view_template_core5');
 		$this->load->view('template_index');
+		$this->load->view('template_admin');
+		$this->load->view('template_login_admin');
 	}
 
 	public function tampilCore($data)
@@ -75,5 +77,17 @@ class Template extends MX_Controller {
 		
 		$this->load->view('template_index',$data);
 	}
+	public function tampil_template_admin($data)
+	{
+		$id = $this->session->userdata('session_id');
+		
+		$this->load->view('template_admin',$data);
+	}
 
+	public function tampil_template_login_admin($data)
+	{
+		$id = $this->session->userdata('session_id');
+		
+		$this->load->view('template_login_admin',$data);
+	}
 }

@@ -125,40 +125,6 @@ class M_product_saya extends CI_Model {
 
 		   $this->db->where('id_datahewan',$id_datahewan)->update('data_hewan',$data_hewan);
 
-		// table kategori
-
-		// $filterhewan 	= $this->input->post('filter_hewan');	
-
-		// $hewan=array(
-		// 	'nama_hewan'	=> $filterhewan
-		// );
-		// $this->db->insert('kategori_hewan',$hewan);
-
-
-
-		// Table Sub Kategori Jenis Hewan
-
-		// 	$jenishewan 	= $this->input->post('jenis_hewan');
-
-		// 	$gambar = $this->upload->data();
-		// 	$data = array(
-		// 		'jenis_hewan'	=> $jenishewan,
-		// 		'foto' 			=> $gambar['file_name'],
-					
-				
-		// 	);
-		//    $this->db->insert('jenis_hewan', $data);
-
-
-
-
-		// table makanan
-		// $jenismakanan	= $this->input->post('jenis_makanan');
-
-		// $makanan =array(
-		// 	'nama_makanan'	=> $jenismakanan
-		// 	);
-		// $this->db->update('tb_makanan',$makanan);
 	}
 
 	function hapus($id_datahewan)
