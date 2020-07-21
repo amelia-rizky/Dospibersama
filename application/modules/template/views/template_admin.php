@@ -39,7 +39,7 @@
 			
 				<!-- Logo -->
                 <div class="header-left">
-                    <a href="index-2.html" class="logo">
+                    <a href="<?php echo base_url('index_admin');?>" class="logo">
 						<img src="assets2/img/logo.jpg" alt="Logo">
 					</a>
 					<a href="index-2.html" class="logo logo-small">
@@ -75,9 +75,9 @@
 							<li>
 								<div class="app-list">
 									<div class="row">
-										<div class="col"><a class="app-item" href="inbox.html"><i class="fa fa-envelope"></i><span>Email</span></a></div>
-										<div class="col"><a class="app-item" href="calendar.html"><i class="fa fa-calendar"></i><span>Kalender</span></a></div>
-										<div class="col"><a class="app-item" href="chat.html"><i class="fa fa-comments"></i><span>Pesan</span></a></div>
+										<div class="col"><a class="app-item" href="<?php echo base_url('email_admin');?>"><i class="fa fa-envelope"></i><span>Email</span></a></div>
+										<div class="col"><a class="app-item" href="<?php echo base_url('kalender_admin');?>"><i class="fa fa-calendar"></i><span>Kalender</span></a></div>
+										<div class="col"><a class="app-item" href="<?php echo base_url('pesan_admin');?>"><i class="fa fa-comments"></i><span>Pesan</span></a></div>
 									</div>
 								</div>
 							</li>
@@ -148,9 +148,9 @@
 									<p class="text-muted mb-0">Admin</p>
 								</div>
 							</div>
-							<a class="dropdown-item" href="profile.html">Profil saya</a>
-							<a class="dropdown-item" href="profile.html">Settings</a>
-							<a class="dropdown-item" href="login.html">Keluar</a>
+							<a class="dropdown-item" href="<?php echo base_url('profil_admin');?>">Profil saya</a>
+							<a class="dropdown-item" href="<?php echo base_url('profil_admin');?>">Settings</a>
+							<a class="dropdown-item" href="<?php echo base_url('login_admin');?>">Keluar</a>
 						</div>
 					</li>
 					<!-- /User Menu -->
@@ -170,53 +170,53 @@
 								<span>Main</span>
 							</li>
 							<li class="active"> 
-								<a href="index-2.html"><i class="fe fe-home"></i> <span>Dashboard</span></a>
+								<a href="<?php echo base_url('index_admin');?>"><i class="fe fe-home"></i> <span>Dashboard</span></a>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="fe fe-cart"></i> <span> Ecommerce</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="products.html">Produk</a></li>
-									<li><a href="product-details.html">Tampilan produk</a></li>
-									<li><a href="orders.html">Pemesanan</a></li>
-									<li><a href="customers.html">Pelanggan</a></li>
-									<li><a href="invoice.html">Faktur</a></li>
+									<li><a href="<?php echo base_url('produk_admin');?>">Produk</a></li>
+									<li><a href="<?php echo base_url('detail_admin');?>">Tampilan produk</a></li>
+									<li><a href="<?php echo base_url('pemesanan_admin');?>">Pemesanan</a></li>
+									<li><a href="<?php echo base_url('pelanggan_admin');?>">Pelanggan</a></li>
+									<li><a href="<?php echo base_url('faktur_admin');?>">Faktur</a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="fe fe-tiled"></i> <span> Aplikasi</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="chat.html">Pesan</a></li>
-									<li><a href="calendar.html">Kalender</a></li>
-									<li><a href="inbox.html">Email</a></li>
+									<li><a href="<?php echo base_url('pesan_admin');?>">Pesan</a></li>
+									<li><a href="<?php echo base_url('kalender_admin');?>">Kalender</a></li>
+									<li><a href="<?php echo base_url('email_admin');?>">Email</a></li>
 								</ul>
 							</li>
 							<li class="menu-title"> 
 								<span>Pages</span>
 							</li>
 							<li> 
-								<a href="profile.html"><i class="fe fe-user-plus"></i> <span>Profil</span></a>
+								<a href="<?php echo base_url('profil_admin');?>"><i class="fe fe-user-plus"></i> <span>Profil</span></a>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="fe fe-document"></i> <span> Autentikasi </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="login.html"> Masuk </a></li>
-									<li><a href="register.html"> Daftar </a></li>
-									<li><a href="forgot-password.html"> Lupa password </a></li>
-									<li><a href="lock-screen.html"> Layar kunci </a></li>
+									<li><a href="<?php echo base_url('login_admin');?>"> Masuk </a></li>
+									<li><a href="<?php echo base_url('register_admin');?>"> Daftar </a></li>
+									<li><a href="<?php echo base_url('lupasandi_admin');?>"> Lupa password </a></li>
+									<li><a href="<?php echo base_url('layar_kunci');?>"> Layar kunci </a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="fe fe-warning"></i> <span> Halaman Error </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="error-404.html">404 Error </a></li>
-									<li><a href="error-500.html">500 Error </a></li>
+									<li><a href="<?php echo base_url('error_admin');?>">404 Error </a></li>
+									
 								</ul>
 							</li>
 							<li> 
-								<a href="users.html"><i class="fe fe-users"></i> <span>Pengguna</span></a>
+								<a href="<?php echo base_url('pengguna_admin');?>"><i class="fe fe-users"></i> <span>Pengguna</span></a>
 							</li>
 							<li> 
-								<a href="maps-vector.html"><i class="fe fe-map"></i> <span>Maps</span></a>
+								<a href="<?php echo base_url('maps_admin');?>"><i class="fe fe-map"></i> <span>Maps</span></a>
 							</li>
 						</ul>
 					</div>
