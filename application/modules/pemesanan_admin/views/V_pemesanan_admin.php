@@ -7,7 +7,7 @@
 							<div class="col-sm-12">
 								<h3 class="page-title">Pemesanan</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index-2.html">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="<?php echo base_url('index_admin');?>">Dashboard</a></li>
 									<li class="breadcrumb-item active">Pemesanan</li>
 								</ul>
 							</div>
