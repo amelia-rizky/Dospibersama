@@ -101,7 +101,7 @@
                                                         </div>
                                                     </div><br><br>
                                                         <div class="send-btn col-md-12" style="text-align: center; margin-left: 5%;">
-                                                            <a href="rating" class="btn btn-white">Selesai</a>
+                                                            <a href="<?php echo base_url('rating');?>" class="btn btn-white">Selesai</a>
                                                         </div><br><br><br><br>
 
                                                     <div style="margin-left: 13%;">

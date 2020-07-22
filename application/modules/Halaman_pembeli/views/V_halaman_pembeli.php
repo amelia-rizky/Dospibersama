@@ -297,7 +297,7 @@
                 </div>
             </div>
             <div style="margin-left: 78%;">
-                <a href="shop_list_pembeli" class="btn btn-white">Selengkapnya&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                <a href="<?php echo base_url('shop_list_pembeli');?>" class="btn btn-white">Selengkapnya&nbsp;<i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
     </div>

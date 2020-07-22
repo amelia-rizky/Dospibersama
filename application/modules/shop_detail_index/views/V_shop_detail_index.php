@@ -4,7 +4,7 @@
         <div class="breadcrumb-areas">
             <h1>Rincian Hewan</h1>
             <ul class="breadcrumbs">
-                <li><a href="halaman_index">Home</a></li>
+                <li><a href="<?php echo base_url('halaman_index');?>">Home</a></li>
                 <li class="active">Rincian Hewan</li>
             </ul>
         </div>

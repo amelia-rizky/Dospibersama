@@ -4,7 +4,7 @@
         <div class="breadcrumb-areas">
             <h1>Kontak Dospi</h1>
             <ul class="breadcrumbs">
-                <li><a href="halaman_pembeli">Home</a></li>
+                <li><a href="<?php echo base_url('halaman_pembeli');?>">Home</a></li>
                 <li class="active">Kontak Dospi</li>
             </ul>
         </div>
