@@ -248,7 +248,7 @@
                                 <!--Modal footer-->
                                 <div class="modal-footer">
                                     <button data-dismiss="modal" class="btn btn-danger" type="button" style="border-radius: 15%;">Cancel</button>
-                                    <button class="btn btn-success" style="border-radius: 15%;"><a href="pembelian-proses.html" style="color: #fff;">Pesan</a></button>
+                                    <button class="btn btn-success" style="border-radius: 15%;"><a href="<?php echo base_url('pemesanan_pembeli');?>" style="color: #fff;">Pesan</a></button>
                                 </div>
                             </div>
                         </div>

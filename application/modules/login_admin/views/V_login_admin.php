@@ -18,12 +18,12 @@
 								</form>
 								<!-- /Form -->
 								
-								<div class="text-center forgotpass"><a href="forgot-password.html">Lupa Password?</a></div>
+								<div class="text-center forgotpass"><a href="<?php echo base_url('lupasandi_admin');?>">Lupa Password?</a></div>
 								<div class="login-or">
 									<span class="or-line"></span>
 								  
 								
-								<div class="text-center dont-have">Tidak mempunyai Akun? <a href="register.html">Registrasi</a></div>
+								<div class="text-center dont-have">Tidak mempunyai Akun? <a href="<?php echo base_url('register_admin');?>">Registrasi</a></div>
 							</div>
                         </div>
                     </div>

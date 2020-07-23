@@ -16,7 +16,7 @@
 								</form>
 								<!-- /Form -->
 								
-								<div class="text-center dont-have">Sign in as a different user? <a href="login.html">Login</a></div>
+								<div class="text-center dont-have">Sign in as a different user? <a href="<?php echo base_url('login_admin');?>">Login</a></div>
 							</div>
                         </div>
                     </div>

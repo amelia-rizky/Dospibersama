@@ -240,23 +240,23 @@
 									<ul class="activity-feed">
 										<li class="feed-item">
 											<div class="feed-date">Apr 13</div>
-											<span class="feed-text"><a href="profile.html">John Doe</a> menambahkan produk baru <a href="product-details.html">"Sapi Brahman"</a></span>
+											<span class="feed-text"><a href="<?php echo base_url('profil_admin');?>">John Doe</a> menambahkan produk baru <a href="<?php echo base_url('detail_admin');?>">"Sapi Brahman"</a></span>
 										</li>
 										<li class="feed-item">
 											<div class="feed-date">Mar 21</div>
-											<span class="feed-text"><a href="profile.html">Justin Lee</a> jumlah yang diminta <a href="invoice.html">1 Ekor Sapi Limusin Berat 1 Ton</a></span>
+											<span class="feed-text"><a href="<?php echo base_url('profil_admin');?>">Justin Lee</a> jumlah yang diminta <a href="<?php echo base_url('faktur_admin');?>">1 Ekor Sapi Limusin Berat 1 Ton</a></span>
 										</li>
 										<li class="feed-item">
 											<div class="feed-date">Feb 2</div>
-											<span class="feed-text">Pengguna baru terdaftar<a href="profile.html">"zaenal"</a></span>
+											<span class="feed-text">Pengguna baru terdaftar<a href="<?php echo base_url('profil_admin');?>">"zaenal"</a></span>
 										</li>
 										<li class="feed-item">
 											<div class="feed-date">Jan 27</div>
-											<span class="feed-text"><a href="profile.html">Robert Martin</a> memberi ulasan untuk <a href="product-details.html">"Kambing Etawa"</a></span>
+											<span class="feed-text"><a href="<?php echo base_url('profil_admin');?>">Robert Martin</a> memberi ulasan untuk <a href="<?php echo base_url('detail_admin');?>">"Kambing Etawa"</a></span>
 										</li>
 										<li class="feed-item">
 											<div class="feed-date">Jan 14</div>
-											<span class="feed-text">Pelanggan baru terdaftar <a href="profile.html">"Sendi Dwi Saputra"</a></span>
+											<span class="feed-text">Pelanggan baru terdaftar <a href="<?php echo base_url('profil_admin');?>">"Sendi Dwi Saputra"</a></span>
 										</li>
 									</ul>
 								</div>

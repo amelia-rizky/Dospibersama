@@ -20,7 +20,7 @@ class error_admin extends MX_Controller {
 			'namafileview' 	=> "V_error_admin",
 			'tampil'		=> $this->m_error_admin->tampil(),
 		);
-		echo Modules::run('template/tampil_template_admin', $data);
+		echo Modules::run('template/tampilCore1', $data);
 	}
 
 	function error_admin(){
