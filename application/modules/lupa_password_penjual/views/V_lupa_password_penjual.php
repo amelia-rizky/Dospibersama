@@ -8,7 +8,7 @@
                     <!-- details -->
                     <div class="details">
                         <!-- Logo -->
-                        <a href="index-3.html">
+                        <a href="<?php echo base_url('halaman_index');?>">
                             <img src="assets/img/black-logo.png" class="cm-logo" alt="black-logo">
                         </a>
                         <!-- Name -->
@@ -20,7 +20,7 @@
                             </div>
                             <div class="form-group mb-0">
                                 <label>
-                                    <a href="<?php echo base_url('login_dospi'); ?>" class="btn-md button-theme btn-block">Submit</a>
+                                    <a href="<?php echo base_url('halaman_penjual'); ?>" class="btn-md button-theme btn-block">Submit</a>
                                 </label>
                             </div>
                         </form>

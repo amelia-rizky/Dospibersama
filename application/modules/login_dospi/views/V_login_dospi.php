@@ -9,7 +9,7 @@
                     <!-- details -->
                     <div class="details">
                         <!-- Logo -->
-                        <a href="index-3.html">
+                        <a href="<?php echo base_url('halaman_index');?>">
                             <img src="assets/img/black-logo.png" class="cm-logo" alt="black-logo">
                         </a>
                         <!-- Name -->
@@ -24,7 +24,7 @@
                             </div>
                             <div class="form-group mb-0">
                                 <label>
-                                        <button class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Masuk</button><br><br><br>
+                                        <a href="<?php echo base_url('halaman_penjual');?>" class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Masuk</a><br><br><br>
                                         <a href="<?php echo base_url('halaman_index'); ?>" class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Kembali</a>
                                 </label>
                             </div>
@@ -32,7 +32,7 @@
                             <div class="checkbox">
                                 <div class="ez-checkbox pull-left">
                                     <label>
-                                        <a href="lupa_password_penjual">Lupa password</a>
+                                        <a href="<?php echo base_url('lupa_password_penjual');?>">Lupa password</a>
                                     </label>
                                 </div>
                             </div>

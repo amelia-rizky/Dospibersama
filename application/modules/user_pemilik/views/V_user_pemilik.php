@@ -20,7 +20,7 @@
                     <!-- details -->
                     <div class="details">
                         <!-- Logo-->
-                        <a href="index-3.html">
+                        <a href="<?php echo base_url('halaman_index');?>">
                             <img src="assets/img/black-logo.png" class="cm-logo" alt="black-logo">
                         </a>
                         <!-- Name -->
@@ -76,14 +76,14 @@
 
                                     <br><br>
                                     <div class="form-group mb-0">
-                                        <button class="btn-md button-theme btn-block">Daftar</button>
-                                        <a href="index-3.html" class="btn-md button-theme btn-block">Kembali</a>
+                                    <a href="<?php echo base_url('lupa_password_penjual');?>" class="btn-md button-theme btn-block">DAFTAR</button>
+                                        <a href="<?php echo base_url('halaman_index');?>" class="btn-md button-theme btn-block">Kembali</a>
                                     </div>
                                 <?= form_close(); ?>
                             </div>
                         <!-- Footer -->
                         <div class="footer">
-                            <span>Siap jadi anggota? <a href="login.html">Daftar</a></span>
+                            <span>Siap jadi anggota? <a href="<?php echo base_url('login_dospi');?>">Daftar</a></span>
                         </div>
                     </div>
                     <!-- Form content box end -->
