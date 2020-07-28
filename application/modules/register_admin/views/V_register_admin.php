@@ -21,18 +21,13 @@
 										<input class="form-control" type="text" placeholder="No.Telepon">
 									</div>
 									<div class="form-group mb-0">
-										<button class="btn btn-primary btn-block" type="submit">Daftar</button>
-										<button class="btn btn-primary btn-block" type="submit">Kembali</button>
+										<a href="<?php echo base_url('lupasandi_admin');?>" class="btn btn-primary btn-block" >Daftar</a>
+										<a href="<?php echo base_url('login_admin');?>" class="btn btn-primary btn-block" >Kembali</a>
 									</div>
 								</form>
 								<br>
-								<!-- Social Login -->
-								<div class="social-login">
-									<a href="#" class="google"><i class="fa fa-google"></i></a>
-								</div>
-								<!-- /Social Login -->
-								
-								<div class="text-center dont-have">Siap jadi Anggota? <a href="login.html">Login</a></div>
+
+								<div class="text-center dont-have">Siap jadi Anggota? <a href="<?php echo base_url('login_admin');?>">Login</a></div>
 							</div>
                         </div>
                 

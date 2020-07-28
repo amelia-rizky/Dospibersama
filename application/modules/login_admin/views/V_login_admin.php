@@ -4,7 +4,7 @@
 								<br><br>
 								
 								<!-- Form -->
-								<form action="http://dreamguys.co.in/demo/ventura/index.html">
+								<form action="http://dreamguys.co.in/demo/ventura/index_admin">
 									<div class="form-group">
 										<input class="form-control" type="text" placeholder="Email">
 									</div>
@@ -12,8 +12,8 @@
 										<input class="form-control" type="text" placeholder="Password">
 									</div>
 									<div class="form-group">
-										<button class="btn btn-primary btn-block" type="submit">Login</button>
-										<button class="btn btn-primary btn-block" type="submit">Kembali</button>
+										<a href="<?php echo base_url('index_admin');?>" class="btn btn-primary btn-block" >Login</a>
+										<a 	href="<?php echo base_url('login_admin');?>" class="btn btn-primary btn-block" >Kembali</a>
 									</div>
 								</form>
 								<!-- /Form -->
