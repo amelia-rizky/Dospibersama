@@ -141,7 +141,7 @@
                                             </ul>
 
                                             <div class="konfirmbayar">
-                                                <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>">Konfirmasi Pembayaran</a>
+                                                <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>">Pembayaran</a>
                                             </div>
 
                                             <div class="row row-2">

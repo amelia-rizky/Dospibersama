@@ -79,7 +79,7 @@
                                             </ul>
                                             
                                             <div class="konfirmbayar">
-                                               <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>">Konfirmasi Pembayaran</a>
+                                               <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran_penjual'); ?>">Konfirmasi Pembayaran</a>
                                             </div>
 
                                             <div class="row row-2">
@@ -130,7 +130,9 @@
                                                 <li>Gmail : <span><a href="mailto:info@themevessel.com"> info@themevessel.com</a> </span></li>
                                                 <li>Nomor Telepon/wa : <span> <a href="tel:+79617036705">+79617036705</a></span></li>
                                             </ul>
-
+                                            <div class="konfirmbayar">
+                                               <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran_penjual'); ?>">Konfirmasi Pembayaran</a>
+                                            </div>
                                             <div class="row row-2">
                                                 <div class="col-lg-6 col-md-12" style="margin-left: 45%; margin-top: -30%;">
                                                     <div class="row">
