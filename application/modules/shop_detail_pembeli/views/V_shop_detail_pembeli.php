@@ -67,7 +67,10 @@
                             </li>
                         </ul>
                         <div class="heading-properties-2">
-                            <h3 style="margin-left: 10%;">Sapi Brahman <span class="rent" style="margin-left: 36%;">Dijual</h3>
+                        <?php foreach($tampil as $shopdetail) {
+
+?>
+                            <h3 style="margin-left: 10%;"><?php echo $shopdetail->nama_hewan ?> <span class="rent" style="margin-left: 36%;">Dijual</h3>
                             <div class="price-location"></div>
                         </div>
                     </div>
@@ -79,9 +82,7 @@
                         <ul class="nav nav-tabs" id="carTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active show" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="false">Deskripsi</a>
-                                <?php foreach($tampil as $shopdetail) {
-
-                                ?>
+                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="6-tab" data-toggle="tab" href="#6" role="tab" aria-controls="6" aria-selected="true">Informasi</a>

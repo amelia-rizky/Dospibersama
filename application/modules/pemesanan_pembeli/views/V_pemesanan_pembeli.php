@@ -72,9 +72,7 @@
                                             <div class="comment-meta">
                                                 <h5 class="title s">Dicky Dharmawan</h5>
                                             </div>
-                                            <div class="status" style="margin-left: 20%; margin-top: -5%;">
-                                                 <div class="btn btn-warning" style="border-radius: 15%;"><a style="color: #fff;" href="#" >Pending</a></div>
-                                            </div>
+                                            
                                             <ul>
                                                 <li>Nama Pemesan:<span> Dicky Dharmawan</span></li>
                                                 <li>Jenis/Nama hewan:<span> Sapi Limosin</span></li>
@@ -126,9 +124,7 @@
                                             <div class="comment-meta">
                                                 <h5 class="title s">Amelia</h5>
                                             </div>
-                                            <div class="status" style="margin-left: 10%; margin-top: -5%;">
-                                                <div class="btn btn-warning" style="border-radius: 15%;"><a style="color: #fff;" href="#" >Pending</a></div>
-                                            </div>
+                                            
                                             <ul>
                                                 <li>Nama Pemesan:<span> Dicky Dharmawan</span></li>
                                                 <li>Jenis/Nama hewan:<span> Sapi Limosin</span></li>
