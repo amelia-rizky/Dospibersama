@@ -20,7 +20,7 @@
                             </div>
                             <div class="form-group mb-0">
                                 <label>
-                                    <a href="<?php echo base_url('halaman_penjual'); ?>" class="btn-md button-theme btn-block">Submit</a>
+                                    <a href="<?php echo base_url('login_penjual'); ?>" class="btn-md button-theme btn-block">Submit</a>
                                 </label>
                             </div>
                         </form>

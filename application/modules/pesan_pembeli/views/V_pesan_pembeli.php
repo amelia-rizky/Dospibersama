@@ -27,7 +27,7 @@
                                         <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                     </h6>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                                <p>Masih ada gan monggo di beli</p>
                             </div>
                         </div>
                         <div class="comment">
@@ -43,7 +43,7 @@
                                         <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                     </h6>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                                <p>Cuman satu itu kambingnya monggo di beli.</p>
                             </div>
                         </div>
                         <div class="comment">
@@ -59,23 +59,7 @@
                                         <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                     </h6>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
-                            </div>
-                        </div>
-                        <div class="comment comment-b">
-                            <div class="comment-author">
-                                <a href="#">
-                                    <img src="assets/img/avatar/avatar-4.jpg" alt="comments-user">
-                                </a>
-                            </div>
-                            <div class="comment-content b-none">
-                                <div class="comment-meta">
-                                    <h6>
-                                        Amelia Rizky Utami
-                                        <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
-                                    </h6>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                                <p>Kurang lebih ada sekitar 5 ekor sapi yang jenisnya Sapi Brahman gan.</p>
                             </div>
                         </div>
                     </div>

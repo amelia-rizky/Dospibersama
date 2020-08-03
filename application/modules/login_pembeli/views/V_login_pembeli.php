@@ -24,7 +24,7 @@
                             </div>
                             <div class="form-group mb-0">
                                 <label>
-                                        <a href="<?php echo base_url('halaman_pembeli');?>" class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Masuk</a><br><br><br>
+                                        <button class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Masuk</button><br><br><br>
                                         <a href="<?php echo base_url('halaman_index'); ?>" class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Kembali</a>
                                 </label>
                             </div>

@@ -28,7 +28,7 @@
                                         <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                     </h6>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                                <p>Apakah sapi ini masih ada?</p>
                             </div>
                         </div>
                         <div class="comment">
@@ -44,39 +44,23 @@
                                         <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                     </h6>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                                <p>Apakah kambing ini masih ada?</p>
                             </div>
                         </div>
                         <div class="comment">
                             <div class="comment-author">
                                 <a href="#">
-                                    <img src="assets/img/avatar/avatar-3.jpg" alt="comments-user">
-                                </a>
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-meta">
-                                    <h6>
-                                        Wahyu Rahmadani
-                                        <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
-                                    </h6>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
-                            </div>
-                        </div>
-                        <div class="comment comment-b">
-                            <div class="comment-author">
-                                <a href="#">
                                     <img src="assets/img/avatar/avatar-4.jpg" alt="comments-user">
                                 </a>
                             </div>
-                            <div class="comment-content b-none">
+                            <div class="comment-content">
                                 <div class="comment-meta">
                                     <h6>
                                         Amelia Rizky Utami
                                         <span class="float-right">11/28/2018<a data-toggle="modal" data-target="#jajal" style="color: blue;">Balasan</a><a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                     </h6>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante.</p>
+                                <p>Permisi pak sapi ini jumlahnya ada berapa ya?</p>
                             </div>
                         </div>
                     </div>
