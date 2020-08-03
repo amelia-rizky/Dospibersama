@@ -23,15 +23,15 @@
                                         <br><br>
                                         <tr>
                                             <td>Nama Lengkap</td>
-                                            <td>: <span><input type="text" name="your-name" value="Ani" size="40" aria-required="true" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="text" name="your-name" size="40" aria-required="true" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>Email</td>
-                                            <td>: <span><input type="email" name="your-email" value="ani1234@gmail.com" size="40" aria-required="true" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="email" name="your-email"  size="40" aria-required="true" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>No Telephone</td>
-                                            <td>: <span><input type="text" name="no-telp" value="098761234582" size="40" aria-required="true" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="text" name="no-telp"  size="40" aria-required="true" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>
@@ -43,11 +43,11 @@
                                         </tr>
                                         <tr>
                                             <td> Jenis Transaksi</td>
-                                            <td>: <span><select name="jenis-transaksi" aria-invalid="false"><option value="">---</option><option value="Order"><OBJECT></OBJECT>Tranfer</option></select></span></td>
+                                            <td>: <span><select name="jenis-transaksi" aria-invalid="false"><option value="">---</option><option value="Order"><OBJECT></OBJECT>Transfer</option></select></span></td>
                                         </tr>
                                         <tr>
                                             <td>No Order</td>
-                                            <td>: <span><input type="text" name="no-order" value="26" size="40"  aria-invalid="false"></span></td>
+                                            <td>: <span><input type="text" name="no-order" value="01" size="40"  aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>Tanggal Pembayaran</td>

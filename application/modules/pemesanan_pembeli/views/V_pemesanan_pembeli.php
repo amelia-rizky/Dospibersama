@@ -70,18 +70,22 @@
                                         </div>
                                         <div class="comment-content">
                                             <div class="comment-meta">
+                                            <?php foreach($tampil as $pemesanan_pembeli) {
+
+                                            ?>
                                                 <h5 class="title s">Dicky Dharmawan</h5>
                                             </div>
                                             
                                             <ul>
-                                                <li>Nama Pemesan:<span> Dicky Dharmawan</span></li>
-                                                <li>Jenis/Nama hewan:<span> Sapi Limosin</span></li>
+                                                <li>Jenis/Nama hewan: <?php echo $pemesanan_pembeli->nama_hewan ?>
+                                                </li>
                                                 <li>Kode barang:<span> 01</span></li>
-                                                <li>Nomor Order:<span> 100</span></li>
+                                                <li>Nomor Order:<span> 01</span></li>
                                                 <li>Tanggal Pemesanan : <span> 18 November 2018</span></li>
                                                 <li>Tanggal Pembelian : <span> 20 November 2018</span></li>
                                                 <li>Gmail : <span><a href="mailto:info@themevessel.com"> info@themevessel.com</a> </span></li>
                                                 <li>Nomor Telepon/wa : <span> <a href="tel:+79617036705">+79617036705</a></span></li>
+                                                <?php } ?>
                                             </ul>
                                             <div class="konfirmbayar">
                                                <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>"> Pembayaran</a>
@@ -163,6 +167,7 @@
                                             <div class="panel-body demo-nifty-btn" style="margin-left: 80%;">
                                                 <button class="btn btn-danger" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('pemesanan_pembeli'); ?>" data-toggle="modal" data-target="#cancel">Cancel</a></button>
                                                 <button class="btn btn-success" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('faktur_pembeli'); ?>">Deal</a></button>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -179,30 +184,6 @@
 <!-- Dashboard end -->
 
 
-                <!-- The Modal hapus -->
-                  <div class="modal fade" id="keluar" style="top: 15%;">
-                    <div class="modal-dialog modal-md">
-                      <div class="modal-content">
-                      
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                          <center><h6>Apakah Anda yakin Untuk Keluar</h6></center>
-                        </div>
-                        
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <a href="index-3penjual.html" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
-                          <a href="index-3.html" class="btn btn-success">Iya</a>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
 
                  <!-- the end modal hapus -->
 

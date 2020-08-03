@@ -76,7 +76,7 @@
 
                             <br><br>
                             <div class="form-group mb-0">
-                            <a href="<?php echo base_url('lupa_password_pembeli');?>" class="btn-md button-theme btn-block">DAFTAR</button>
+                            <a href="<?php echo base_url('halaman_pembeli');?>" class="btn-md button-theme btn-block">DAFTAR</button>
                                 <a href="<?php echo base_url('halaman_index');?>" class="btn-md button-theme btn-block">Kembali</a>
                             </div>
                         <?= form_close(); ?>

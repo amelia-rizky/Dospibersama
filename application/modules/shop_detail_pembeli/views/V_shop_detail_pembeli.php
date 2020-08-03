@@ -21,6 +21,10 @@
                 <div class="properties-details-section">
                     <div id="propertiesDetailsSlider" class="carousel properties-details-sliders slide mb-40">
                         <!-- main slider carousel items -->
+                        <?php foreach($tampil as $shopdetail) {
+                        $id = $shopdetail->id_gambar;
+                        $gambar = $shopdetail->gambar;
+                        ?>
                         <div class="carousel-inner">
                             <div class="active item carousel-item" data-slide-number="0">
                                 <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
@@ -67,9 +71,7 @@
                             </li>
                         </ul>
                         <div class="heading-properties-2">
-                        <?php foreach($tampil as $shopdetail) {
-
-?>
+                        
                             <h3 style="margin-left: 10%;"><?php echo $shopdetail->nama_hewan ?> <span class="rent" style="margin-left: 36%;">Dijual</h3>
                             <div class="price-location"></div>
                         </div>
@@ -109,7 +111,7 @@
                                     
                                                 <p>Sapi brahman adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>
                                                 <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan.</p>
-                                                <?php } ?>
+                                               
 
                                 </div>
                             </div>
@@ -133,9 +135,7 @@
 
                     <!-- Start Foreach -->
 
-                    <?php foreach($tampil as $shopdetail) {
-
-                    ?>
+                    
                     <!-- Recent properties start -->
                     <div class="detail">
                         <br>

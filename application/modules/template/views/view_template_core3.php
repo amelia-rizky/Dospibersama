@@ -103,7 +103,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                                     <?php echo $rows['username'] ?>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="<?php echo base_url('pessan_pembeli'); ?>">Pesan</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('pesan_pembeli'); ?>">Pesan</a>
                                     <a class="dropdown-item" href="<?php echo base_url('pemesanan_pembeli'); ?>">Pemesanan</a>
                                     <a class="dropdown-item" href="<?php echo base_url('pembelian_pembeli'); ?>">Pembelian</a>
                                     <a class="dropdown-item" href="<?php echo base_url('profil_pembeli'); ?>">Profil Saya</a>
