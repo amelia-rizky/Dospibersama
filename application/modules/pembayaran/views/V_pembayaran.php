@@ -9,7 +9,7 @@
                                             <div class="card-body">
                                                 <div class="form-group" style="margin-left: 3%;">
                                                     <label class="control-label mb-10" for="cardNo">Biaya yang harus dikirim:</label>
-                                                    <input type="text" id="cardNo" data-mask="9999-9999-9999-9999" class="form-control required" name="car_number" value="Rp. 13.500.000" />
+                                                    <input type="text" id="cardNo" data-mask="9999-9999-9999-9999" class="form-control required" name="car_number" value="Rp. 40.500.000" />
                                                 </div>                                        
                                                 <div class="form-group" style="margin-left: 3%;">
                                                     <label class="control-label mb-10" for="CreditCardType">card type:</label>
@@ -19,7 +19,7 @@
                                                 </div>
                                                 <div class="form-group" style="margin-left: 3%;">
                                                     <label class="control-label mb-10" for="cardNo">Credit Card Number:</label>
-                                                    <input type="text" id="cardNo" data-mask="9999-9999-9999-9999" class="form-control required" name="car_number" value="657676576576" />
+                                                    <input type="text" id="cardNo" data-mask="9999-9999-9999-9999" class="form-control required" name="car_number" value="6550-01-002904-50-4" />
                                                 </div>
                                                 <div class="form-group mb-0">
                                                     <div class="row">
@@ -32,13 +32,17 @@
                                                     </div>
                                                 </div><br><br>
                                                 <div class="bayarproses" style="margin-top: 7%;">
-                                                    <center><button class="btn btn-success"><a href="<?php echo base_url ('pemesanan_pembeli');?>" style="color: white;">Bayar&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a></button></center>
+                                                    <center><button class="btn btn-success"><a href="<?php echo base_url ('konfirmasi_pembayaran');?>" style="color: white;">Bayar&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a></button></center>
                                                     <br><br><br>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <?php foreach($tampil as $shopdetail) {
+                                $id = $shopdetail->id_gambar;
+                                $gambar = $shopdetail->gambar;
+                                ?>
                                 <div class="col-lg-6 col-md-6" style="margin-left: 50%;">
                                     <div class="card">
                                         <div class="card-body">
@@ -47,10 +51,11 @@
                                                 <div class="sapi" style="margin-left: 18%;">
                                                 <br><p>Nomor order : 001</p>
                                                 <p>Code hewan : 041</p>
-                                                <p>Nama hewan : Sapi Brahman</p>
-                                                <p>Total harga hewan : Rp. 50.000.000</p>
+                                                <p>Nama hewan : <?php echo $shopdetail->jenis_hewan ?></p>
+                                                <p>Harga hewan: <?php echo $shopdetail->harga_hewan ?></p>
                                                 <p>Sub total DP : 27%</p>
-                                                <p>Total pembayaran DP : Rp. 13.500.000</p>
+                                                <p>Total pembayaran DP : Rp. 40.500.000</p>
+                                <?php } ?>
                                                 </div>
                                             </div>
                                         </div>

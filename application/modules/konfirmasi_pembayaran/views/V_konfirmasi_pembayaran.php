@@ -2,6 +2,7 @@
                 <div class="content-area5">
                     <div class="dashboard-content">
                         <div class="dashboard-list"><br>
+                        
                             <h3 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-credit-card">&nbsp;&nbsp;&nbsp;Konfirmasi Pembayaran Anda !</i></h3>
 
                             <center><div class="box-info"><i class="fa fa-warning">&nbsp;&nbsp;Mohon isi Form Konfirmasi Pembayaran di Bawah ini Dengan Hati-hati Demi Memperlancar Transaksi Anda.</i></div></center><br>
@@ -20,18 +21,19 @@
                                 </div>
                                 <table style="padding-left: 25%;">
                                     <tbody>
+                                    <?= form_open_multipart('konfirmasi_pembayaran/bayar'); ?>
                                         <br><br>
                                         <tr>
                                             <td>Nama Lengkap</td>
-                                            <td>: <span><input type="text" name="your-name" size="40" aria-required="true" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="varchar" name="nama_lengkap" size="40" aria-required="true" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>Email</td>
-                                            <td>: <span><input type="email" name="your-email"  size="40" aria-required="true" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="email" name="email"  size="40" aria-required="true" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>No Telephone</td>
-                                            <td>: <span><input type="text" name="no-telp"  size="40" aria-required="true" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="varchar" name="no_tlp"  size="40" aria-required="true" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>
@@ -43,11 +45,11 @@
                                         </tr>
                                         <tr>
                                             <td> Jenis Transaksi</td>
-                                            <td>: <span><select name="jenis-transaksi" aria-invalid="false"><option value="">---</option><option value="Order"><OBJECT></OBJECT>Transfer</option></select></span></td>
+                                            <td>: <span><select name="jenis_transaksi" aria-invalid="false"><option value="">---</option><option value="Order"><OBJECT></OBJECT>Transfer</option></select></span></td>
                                         </tr>
                                         <tr>
                                             <td>No Order</td>
-                                            <td>: <span><input type="text" name="no-order" value="01" size="40"  aria-invalid="false"></span></td>
+                                            <td>: <span><input type="text" name="no_order" value="01" size="40"  aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>Tanggal Pembayaran</td>
@@ -63,28 +65,29 @@
 
                                         <tr>
                                             <td>Metode Pembayaran</td>
-                                            <td>: <span><select name="metode" aria-invalid="false"><option value="">---</option><option value="Deposit">Deposit</option></select></span></td>
+                                            <td>: <span><select name="metode_bayar" aria-invalid="false"><option value="">---</option><option value="Deposit">Deposit</option></select></span></td>
                                         </tr>
                                         <tr>
                                             <td>Bank yang digunakan</td>
-                                            <td>: Dari <span><select name="dari-bank" aria-invalid="false"><option value="">---</option><option value="BRI">BRI</option><option value="BNI">BNI</option><option value="BCA">BCA</option><option value="Mandiri">Mandiri</option><option value="Lain-lain">Lain-lain</option></select></span> Ke <span><select name="ke-bank" aria-invalid="false"><option value="">---</option><option value="BCA">BRI</option></select></span></td>
+                                            <td>: Dari <span><select name="bank" aria-invalid="false"><option value="">---</option><option value="BRI">BRI</option><option value="BNI">BNI</option><option value="BCA">BCA</option><option value="Mandiri">Mandiri</option><option value="Lain-lain">Lain-lain</option></select></span> Ke <span><select name="ke-bank" aria-invalid="false"><option value="">---</option><option value="BCA">BRI</option></select></span></td>
                                         </tr>
                                         <tr>
                                             <td>Nama Pemilik Rekening</td>
-                                            <td>: <span><input type="text" name="pemilik-rek" value="" size="40" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="varchar" name="pemilik_rekening" value="" size="40" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>Jumlah Pembayaran</td>
-                                            <td>: Rp <span><input type="text" name="jumlah" value="" size="40" aria-required="true" aria-invalid="false"></span> <i>masukkan angka saja</i></td>
+                                            <td>: Rp <span><input type="varchar" name="jumlah" value="40.500.000" size="40" aria-required="true" aria-invalid="false"></span> <i>masukkan angka saja</i></td>
                                         </tr>
                                         <tr>
                                             <td>Bukti Pembayaran</td>
-                                            <td>: <span><input type="file" name="bukti" size="40" accept=".jpg,.jpeg,.pdf" aria-invalid="false"></span></td>
+                                            <td>: <span><input type="text" name="bukti_bayar" size="40" accept=".jpg,.jpeg,.pdf" aria-invalid="false"></span></td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td><br>
                                             <td><br><a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('pemesanan_pembeli'); ?>">Kirim</a><br><br><br><br></td>
                                         </tr>
+                                        <?= form_close(); ?>
                                         </tbody>
                                 </table>
                             </form>

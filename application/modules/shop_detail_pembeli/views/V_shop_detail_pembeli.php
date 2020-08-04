@@ -30,7 +30,7 @@
                                 <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="1">
-                                <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpeg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="2">
                                 <img src="<?php echo base_url (); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
@@ -39,7 +39,7 @@
                                 <img src="<?php echo base_url (); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="5">
-                                <img src="<?php echo base_url (); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/file_1584456174.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                         </div>
                         <!-- main slider carousel nav controls -->
@@ -51,7 +51,7 @@
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpeg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
@@ -66,7 +66,7 @@
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url (); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/file_1584456174.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                         </ul>
@@ -243,13 +243,13 @@
                                                         <p>Code Hewan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1</p>
                                                         <p class="strong">Harga hewan :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $shopdetail->harga_hewan ?></p>
                                                         <p>Sub Total DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;27%</p>
-                                                        <p>Total Pembayaran Dp&nbsp;&nbsp;&nbsp;: Rp. 13.500.000</p>
+                                                        <p>Total Pembayaran Dp&nbsp;&nbsp;&nbsp;: Rp. 40.500.000</p>
                                                     </address>
                                                 </div>
                                 <!--Modal footer-->
                                 <div class="modal-footer">
                                     <button data-dismiss="modal" class="btn btn-danger" type="button" style="border-radius: 15%;">Cancel</button>
-                                    <button class="btn btn-success" style="border-radius: 15%;"><a href="<?php echo base_url('pemesanan_pembeli');?>" style="color: #fff;">Pesan</a></button>
+                                    <button class="btn btn-success" style="border-radius: 15%;"><a href="<?php echo base_url('Pembayaran');?>" style="color: #fff;">Pesan</a></button>
                                 </div>
                             </div>
                         </div>
