@@ -68,7 +68,7 @@
                                                             <td>002</td>
                                                             <td class="text-center">King Zainal Aladin</td>
                                                             <td class="text-center">Deposit</td>
-                                                            <td><a href="<?php echo bas_url('pembelian_penjual');?>" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
+                                                            <td><a href="<?php echo base_url('pembelian_penjual');?>" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
                                                             <td>16-02-2020</td>
                                                             <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
                                                         </tr>
