@@ -30,13 +30,13 @@ class Product_saya extends MX_Controller {
 	function edit_hewan()
 	{
 		$this->m_product_saya->edit_hewan();
-		redirect('product_saya');
+		// redirect('product_saya');
 	}
 
 	function hapus($id_datahewan)
 	{
 	$this->m_product_saya->hapus($id_datahewan);
-		redirect('product_saya');
+		// redirect('product_saya');
 	}
 	}
 ?>
