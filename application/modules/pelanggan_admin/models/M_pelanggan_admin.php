@@ -5,8 +5,7 @@ class M_pelanggan_admin extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('tata_cara')->result();
+		return $this->db->get('data_hewan')->result();
+		
 	}
-	
-
 }

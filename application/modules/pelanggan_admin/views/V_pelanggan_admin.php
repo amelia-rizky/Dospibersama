@@ -17,60 +17,79 @@
 					<!-- /Page Header -->
 					<div class="row">
 						<div class="col-sm-12">
-						
 							<div class="card card-table">
 								<div class="card-header">
-									<h4 class="card-title">Daftar Pelanggan</h4>
+									<h4 class="card-title">Daftar Pengguna</h4>
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
 										<table class="table table-hover table-center">
+										<?php 
+											foreach ($tampil as $rey) {
+											$id_datahewan = $rey->id_datahewan;
+
+										?>
 											<thead>
 												<tr>
-													<th>ID</th>
-													<th>Pelanggan</th>
-													<th>Yang dapat dihubungi</th>
+													<th>Username</th>
 													<th>Email</th>
-													<th>Penjualan</th>
+													<th>Sandi</th>
+													<th>Status</th>
+													<th>Tindakan</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>#CUS0001</td>
-													<td><a href="#">Lek gito ternak</a></td>
-													<td>Gito gunawan</td>
-													<td>gitogunawan11@gmail.com</td>
-													<td>Rp. 450.000.000</td>
+													<td>Adelia</td>
+													<td><a href="#">adeliaretno@gmail.com</a></td>
+													<td>adelia</td>
+													<td>Pembeli</td>
+													<td class="action">
+														<a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-pencil"></i> Edit</a>
+														<a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-remove" ></i> Hapus</a>
+													</td>
 												</tr>
 												<tr>
-													<td>#CUS0002</td>
-													<td><a href="#">Ternak Pak Zaenal</a></td>
-													<td>Zaenal</td>
-													<td>Zaenalaladin@gmail.com</td>
-													<td>Rp. 489.000.000</td>
+													<td>Amel</td>
+													<td><a href="#">amelretno@gmail.com</a></td>
+													<td>Amel</td>
+													<td>Pembeli</td>
+													<td class="action">
+														<a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-pencil"></i> Edit</a>
+														<a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-remove" ></i> Hapus</a>
+													</td>
 												</tr>
 												<tr>
-													<td>#CUS0003</td>
-													<td><a href="#">Ternak kita</a></td>
-													<td>Barry Cuda</td>
-													<td>barrycuda@example.com</td>
-													<td>Rp. 300.000.000</td>
+													<td>Febry</td>
+													<td><a href="#">febryretno@gmail.com</a></td>
+													<td>Febry</td>
+													<td>Pembeli</td>
+													<td class="action">
+														<a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-pencil"></i> Edit</a>
+														<a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-remove" ></i> Hapus</a>
+													</td>
 												</tr>
 												<tr>
-													<td>#CUS0004</td>
-													<td><a href="#">International Software Inc</a></td>
-													<td>Walter Weaver</td>
-													<td>walterweaver@example.com</td>
-													<td>Rp. 200.000.000</td>
+													<td>Binti</td>
+													<td><a href="#">bintiretno@gmail.com</a></td>
+													<td>Binti</td>
+													<td>Pembeli</td>
+													<td class="action">
+														<a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-pencil"></i> Edit</a>
+														<a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-remove" ></i> Hapus</a>
+													</td>
 												</tr>
 												<tr>
-													<td>#CUS0005</td>
-													<td><a href="#">Mercury Software Inc</a></td>
-													<td>Amanda Warren</td>
-													<td>amandawarren@example.com</td>
-													<td>Rp. 100.000.000</td>
+													<td>Endah</td>
+													<td><a href="#">endahretno@gmail.com</a></td>
+													<td>Endah</td>
+													<td>Pembeli</td>
+													<td class="action">
+														<a data-toggle="modal" data-target="#edit<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-pencil"></i> Edit</a>
+														<a data-toggle="modal" data-target="#hapus<?php echo $rey->id_datahewan ?>" style=""><i class="fa fa-remove" ></i> Hapus</a>
+													</td>
 												</tr>
-												<tr>
+												<!-- <tr>
 													<td>#CUS0006</td>
 													<td><a href="#">Gutmann Inc</a></td>
 													<td>Keith Williams</td>
@@ -90,15 +109,38 @@
 													<td>Jason Dimartino</td>
 													<td>jasondimartino@example.com</td>
 													<td>Rp. 90.000.000</td>
-												</tr>
+												</tr> -->
 											</tbody>
-										</table>
-									</div>
+									
+										
+								<!-- The Modal hapus -->
+								<div class="modal fade" id="hapus<?php echo $rey->id_datahewan ?>" style="top: 15%;">
+								<div class="modal-dialog modal-md">
+								<div class="modal-content">
+										
+								<!-- Modal Header -->
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 								</div>
+											
+								<!-- Modal body -->
+								<div class="modal-body">
+								<center><h6>Apakah Anda yakin untuk menghapus data ini?</h6></center>
+								</div>
+											
+								<!-- Modal footer -->
+								<div class="modal-footer">
+								<a href="" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
+								<a href="" class="btn btn-success"  href="<?php echo $rey->id_datahewan ?>">Iya</a>
+								</div>
+								
 							</div>
-							
-						</div>					
-					</div>					
-				</div>			
-			</div>
-			<!-- /Page Wrapper -->
+						</div>
+						<?php } ?> 	
+						</table>
+					</div>
+				</div>
+			</div>					
+		</div>			
+		</div>
+		<!-- /Page Wrapper -->
