@@ -81,7 +81,7 @@
                                  <input type="text" class="form-control" name="komentar" placeholder="Tuliskan Komentar..." style="color: #333;">
                             </div>
                                  <div class="send-btn col-md-12">
-                                    <button type="submit" class="btn btn-md button-theme">Kirim Pesan</button>
+                                 <center><a href="<?php echo base_url('halaman_pembeli');?>" class="btn btn-white">Kirim</a></center>
                                 </div>
                             <br>
                             <div class="checkbox">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Jul 2020 pada 08.12
+-- Waktu pembuatan: 06 Agu 2020 pada 06.41
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.8
 
@@ -32,6 +32,7 @@ CREATE TABLE `data_hewan` (
   `id_datahewan` int(11) NOT NULL,
   `id_kategori` int(11) NOT NULL,
   `id_jenis` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
   `ukuran_hewan` varchar(50) NOT NULL,
   `berat_hewan` int(50) NOT NULL,
   `jenis_kelamin` varchar(50) NOT NULL,
@@ -51,8 +52,9 @@ CREATE TABLE `data_hewan` (
 -- Dumping data untuk tabel `data_hewan`
 --
 
-INSERT INTO `data_hewan` (`id_datahewan`, `id_kategori`, `id_jenis`, `ukuran_hewan`, `berat_hewan`, `jenis_kelamin`, `id_makanan`, `warna_hewan`, `deskripsi`, `harga_hewan`, `nama_pemilik`, `rt_rw`, `kabupaten`, `kode_pos`, `id_gambar`, `tanggal_tambah`) VALUES
-(1, 1, 1, '20x3x3', 500, 'Betina', 1, 'mejiku', 'dan sayangmu, setulus pesanmu kepadaku engkau kan menunggu', 'Rp.150.000.000', 'amelia rizky', 'rt 18, rw 05 Dongko', 'trenggalek', 6666666, 2, '2020-06-16');
+INSERT INTO `data_hewan` (`id_datahewan`, `id_kategori`, `id_jenis`, `id_user`, `ukuran_hewan`, `berat_hewan`, `jenis_kelamin`, `id_makanan`, `warna_hewan`, `deskripsi`, `harga_hewan`, `nama_pemilik`, `rt_rw`, `kabupaten`, `kode_pos`, `id_gambar`, `tanggal_tambah`) VALUES
+(1, 1, 1, 0, 'panjang = 3m, lebar= 80cm, tinggi= 2m', 500, '', 1, 'Coklat Tua', '', 'Rp.150.000.000', 'Pak Slamet', 'rt.03/rw.05 Dongko', 'Trenggalek', 66311, 1, '2020-08-06'),
+(2, 2, 2, 0, 'panjang = 3m, lebar= 80cm, tinggi= 2m', 200, 'Jantan', 2, 'Coklat', 'Sapi adalah hewan gemuk', 'Rp.50.000.000', 'Pak Gito', '1/1/Karangploso/mala', 'malang', 66345, 2, '2020-08-07');
 
 -- --------------------------------------------------------
 
@@ -70,11 +72,16 @@ CREATE TABLE `gambar_hewan` (
 --
 
 INSERT INTO `gambar_hewan` (`id_gambar`, `gambar`) VALUES
-(1, 'avatar-9.jpg'),
-(2, 'avatar-8.jpg'),
-(3, 'avatar-7.jpg'),
-(4, 'avatar-6.jpg'),
-(5, 'avatar-51.jpg');
+(1, 'file_1596683188'),
+(2, 'file_1596683188'),
+(3, 'file_1596683188'),
+(4, 'file_1596683188'),
+(5, 'file_1596683188'),
+(6, 'properties-111.jpg'),
+(7, 'properties-24.png'),
+(8, 'properties-44.jpg'),
+(9, 'properties-411.jpg'),
+(10, 'Sapi_Limusin_Coklat.jpg');
 
 -- --------------------------------------------------------
 
@@ -120,7 +127,8 @@ CREATE TABLE `jenis_hewan` (
 --
 
 INSERT INTO `jenis_hewan` (`id_jenis`, `jenis_hewan`, `deskripsi`, `id_kategori`, `foto`) VALUES
-(1, 'sapi Halu', '', 0, 'avatar-51.jpg');
+(1, 'Sapi Limusin', '<p>Sapi Limusin adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>\r\n                                                <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan.</p>', 0, 'properties-43.jpg'),
+(2, 'Sapi Brahman', '', 0, 'Sapi_Limusin_Coklat.jpg');
 
 -- --------------------------------------------------------
 
@@ -138,7 +146,27 @@ CREATE TABLE `kategori_hewan` (
 --
 
 INSERT INTO `kategori_hewan` (`id_kategori`, `nama_hewan`) VALUES
-(1, 'Sapi');
+(1, 'Sapi'),
+(2, 'Sapi');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `konfirmasi`
+--
+
+CREATE TABLE `konfirmasi` (
+  `nama_lengkap` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `no_tlp` varchar(15) NOT NULL,
+  `jenis_transaksi` varchar(100) NOT NULL,
+  `tanggal_bayar` date NOT NULL,
+  `metode_bayar` varchar(100) NOT NULL,
+  `bank` varchar(100) NOT NULL,
+  `pemilik_rekening` varchar(100) NOT NULL,
+  `jumlah_bayar` varchar(50) NOT NULL,
+  `bukti_bayar` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -148,11 +176,15 @@ INSERT INTO `kategori_hewan` (`id_kategori`, `nama_hewan`) VALUES
 
 CREATE TABLE `konfirmasi_bayar` (
   `id_konfirm_bayar` int(11) NOT NULL,
-  `id_pemesanan` int(11) NOT NULL,
+  `nama_lengkap` varchar(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `no_tlp` varchar(20) NOT NULL,
   `jenis_transaksi` varchar(100) NOT NULL,
   `tgl_bayar` date NOT NULL,
-  `id_ bank` int(11) NOT NULL,
-  `bukti_bayar` varchar(200) NOT NULL
+  `metode_bayar` varchar(200) NOT NULL,
+  `bank` varchar(200) NOT NULL,
+  `pemilik_rekening` varchar(200) NOT NULL,
+  `bukti bayar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -311,7 +343,14 @@ CREATE TABLE `tb_makanan` (
 --
 
 INSERT INTO `tb_makanan` (`id_makanan`, `nama_makanan`) VALUES
-(1, 'alami');
+(1, 'alami'),
+(2, 'alami'),
+(3, 'alami'),
+(4, 'alami'),
+(5, 'alami'),
+(6, 'alami'),
+(7, 'combor'),
+(8, 'combor');
 
 -- --------------------------------------------------------
 
@@ -367,7 +406,8 @@ CREATE TABLE `tb_rating` (
 
 INSERT INTO `tb_rating` (`id_rating`, `jumlah_rating`, `komentar`, `id_user`) VALUES
 (5, '', 'sapi baguss', 0),
-(6, '', 'kemengg', 0);
+(6, '', 'kemengg', 0),
+(7, '', 'baguss', 0);
 
 -- --------------------------------------------------------
 
@@ -412,7 +452,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `foto_profil`, `username`, `password`, `email`, `jenis_kelamin`, `no_tlp`, `foto_ktp`, `status`) VALUES
-(86, 'file_1584432013.jpg', 'Wahyu  Rahmadani', 12345, 'bagongchanel75@gmail.com', 'laki-laki', '085233170475', 'file_1584361662.jpeg', '1');
+(86, 'default.jpg', 'Wahyu  Rahmadani', 12345, 'bagongchanel75@gmail.com', 'laki-laki', '085233170475', 'file_1584361662.jpeg', '2'),
+(93, 'default.jpg', 'amelia', 123456, 'ameliarizky738@gmail.com', 'perempuan', '082234566543', 'file_1596419004.jpg', '1');
 
 --
 -- Indexes for dumped tables
@@ -546,13 +587,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `data_hewan`
 --
 ALTER TABLE `data_hewan`
-  MODIFY `id_datahewan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_datahewan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `gambar_hewan`
 --
 ALTER TABLE `gambar_hewan`
-  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `gambar_layanan`
@@ -570,13 +611,13 @@ ALTER TABLE `image_slider`
 -- AUTO_INCREMENT untuk tabel `jenis_hewan`
 --
 ALTER TABLE `jenis_hewan`
-  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori_hewan`
 --
 ALTER TABLE `kategori_hewan`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `konfirmasi_bayar`
@@ -630,7 +671,7 @@ ALTER TABLE `tb_komentar`
 -- AUTO_INCREMENT untuk tabel `tb_makanan`
 --
 ALTER TABLE `tb_makanan`
-  MODIFY `id_makanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_makanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_pemesanan`
@@ -648,7 +689,7 @@ ALTER TABLE `tb_pesan`
 -- AUTO_INCREMENT untuk tabel `tb_rating`
 --
 ALTER TABLE `tb_rating`
-  MODIFY `id_rating` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_rating` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_tentang`
@@ -660,7 +701,7 @@ ALTER TABLE `tb_tentang`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

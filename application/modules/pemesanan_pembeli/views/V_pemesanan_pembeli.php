@@ -64,18 +64,20 @@
                                             <?php foreach($tampil as $pemesanan_pembeli) {
 
                                             ?>
-                                                <h5 class="title s">Dicky Dharmawan</h5>
+                                                <h5 class="title s">Wahyu Ramadani</h5>
                                             </div>
                                             
                                             <ul>
+                                                
+                                                <li>Kode barang:<span> 01</span></li>
+                                                <li>Nomor Order:<span> 001</span></li>
                                                 <li>Jenis/Nama hewan: <?php echo $pemesanan_pembeli->nama_hewan ?>
                                                 </li>
-                                                <li>Kode barang:<span> 01</span></li>
-                                                <li>Nomor Order:<span> 01</span></li>
-                                                <li>Tanggal Pemesanan : <span> 18 November 2018</span></li>
-                                                <li>Tanggal Pembelian : <span> 20 November 2018</span></li>
-                                                <li>Gmail : <span><a href="mailto:info@themevessel.com"> info@themevessel.com</a> </span></li>
-                                                <li>Nomor Telepon/wa : <span> <a href="tel:+79617036705">+79617036705</a></span></li>
+                                                <li>Tanggal Pemesanan : <span> 6 Agustus 2020</span></li>
+                                                <li>Tanggal Pembelian : <span> 7 Agustus 2020</span></li>
+                                                <li>Nama Penjual : <?php echo $pemesanan_pembeli->nama_pemilik ?></li>
+                                                <li>Gmail : <span><a href="mailto:infogito@gmail.com"> info@themevessel.com</a> </span></li>
+                                                <li>Nomor Telepon/wa Penjual : <span> <a href="tel:+79617036705">0822 3456 2345</a></span></li>
                                                 <?php } ?>
                                             </ul>
                                             <div class="konfirmbayar">
@@ -92,7 +94,7 @@
                                                                     <div class="category-overlay">
                                                                         <div class="category-content">
                                                                             <h3 class="category-title">
-                                                                                <a href="#">Sapi Brahman</a>
+                                                                                <a href="#">Limusin</a>
                                                                             </h3>
                                                                         </div>
                                                                     </div>
@@ -109,59 +111,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="comment comment-b">
-                                        <div class="comment-author">
-                                            <a href="#">
-                                                <img src="assets/img/avatar/avatar-4.jpg" alt="comments-user">
-                                            </a>
-                                        </div>
-                                        <div class="comment-content">
-                                            <div class="comment-meta">
-                                                <h5 class="title s">Amelia</h5>
-                                            </div>
-                                            
-                                            <ul>
-                                                <li>Nama Pemesan:<span> Dicky Dharmawan</span></li>
-                                                <li>Jenis/Nama hewan:<span> Sapi Limosin</span></li>
-                                                <li>Kode barang:<span> 01</span></li>
-                                                <li>Nomor Order:<span> 100</span></li>
-                                                <li>Tanggal Pemesanan : <span> 18 November 2018</span></li>
-                                                <li>Tanggal Pembelian : <span> 20 November 2018</span></li>
-                                                <li>Gmail : <span><a href="mailto:info@themevessel.com"> info@themevessel.com</a> </span></li>
-                                                <li>Nomor Telepon/wa : <span> <a href="tel:+79617036705">+79617036705</a></span></li>
-                                            </ul>
-
-                                            <div class="konfirmbayar">
-                                                <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>">Pembayaran</a>
-                                            </div>
-
-                                            <div class="row row-2">
-                                                <div class="col-lg-6 col-md-12" style="margin-left: 44%; margin-top: -30%;">
-                                                    <div class="row">
-                                                        <div class="col-md-6 col-lg-12 col-pad">
-                                                            <div class="category">
-                                                                <div class="category_bg_box cat-2-bg">
-                                                                    <div class="category-overlay">
-                                                                        <div class="category-content">
-                                                                            <h3 class="category-title">
-                                                                                <a href="#">Sapi Brahman</a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="panel-body demo-nifty-btn" style="margin-left: 80%;">
-                                                <button class="btn btn-danger" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('pemesanan_pembeli'); ?>" data-toggle="modal" data-target="#cancel">Cancel</a></button>
-                                                <button class="btn btn-success" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('faktur_pembeli'); ?>">Deal</a></button>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
+                                     
                                 </div>
                             </div>
                         </form>

@@ -14,13 +14,13 @@
                                                 </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 invoice-mb-30">
-                                                <div class="order">No.Order # 12345</div>
+                                                <div class="order">No.Order # 001</div>
                                             </div>
                                             <div class="col-lg-3 col-md-6 col-sm-6">
                                                 <address class="address-info">
                                                     <p class="strong">Ditagih Ke:</p>
-                                                    <p>King Zainal Aladin</p>
-                                                    <p>Kode Barang: 002</p>
+                                                    <p>Wahyu Ramadani</p>
+                                                    <p>Kode Barang: 01</p>
                                                 </address>
                                             </div>
                                             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -28,7 +28,7 @@
                                                     <p class="strong">Dikirim Ke:</p>
                                                     <p>Dospi</p>
                                                     <p class="strong">No.rekening:</p>
-                                                    <p>000111222333</p>
+                                                    <p>6550-01-002904-50-4</p>
                                                 </address>
                                             </div>
                                             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -40,7 +40,7 @@
                                             <div class="col-lg-3 col-md-6 col-sm-6">
                                                 <address class="address-info text-right">
                                                     <p class="strong"> Tanggal Pemesanan:</p>
-                                                    <p>February 3,2020</p>
+                                                    <p>6 Agustus 2020</p>
                                                 </address>
                                             </div>
 
@@ -64,9 +64,9 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>Sapi Brahman</td>
-                                                                <td>Rp 50.000.000.00</td>
+                                                                <td>Rp 150.000.000.00</td>
                                                                 <td>1</td>
-                                                                <td>Rp 50.000.000.00</td>
+                                                                <td>Rp 150.000.000.00</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -84,15 +84,15 @@
                                                                         <tbody>
                                                                             <tr>
                                                                                 <th>Subtotal:</th>
-                                                                                <td class="text-right">Rp 50.000.000.00</td>
+                                                                                <td class="text-right">Rp 150.000.000.00</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Deposit: <span class="text-regular">(27%)</span></th>
-                                                                                <td class="text-right">Rp 13.500.000</td>
+                                                                                <td class="text-right">Rp 40.500.000</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <th>Total:</th>
-                                                                                <td class="text-right text-primary"><h5>Rp 13.500.000.00</h5></td>
+                                                                                <td class="text-right text-primary"><h5>Rp 40.500.000.00</h5></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>

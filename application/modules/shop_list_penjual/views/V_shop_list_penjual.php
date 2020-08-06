@@ -96,7 +96,7 @@
                               class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp&nbsp;<?php echo $shoplist->harga_hewan; ?></div>
-                                    <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" value="<?php echo $shoplist->gambar ?>" alt="properties">
+                                    <img class="d-block w-100" src="assets/img/properties/properties-1.jpg" value="<?php echo $shoplist->gambar ?>" alt="properties">
                                 </a>
                             </div>
                             <div class="detail">

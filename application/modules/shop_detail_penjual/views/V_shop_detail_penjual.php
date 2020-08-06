@@ -25,48 +25,51 @@
                                 <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="1">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpeg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="2">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="4">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="5">
-                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url (); ?>assets/img/properties/file_1584456174.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                         </div>
                         <!-- main slider carousel nav controls -->
                         <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                             <li class="list-inline-item active">
                                 <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/small-properties-1.jpeg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-2" data-slide-to="2" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-3" data-slide-to="3" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
-                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url (); ?>assets/img/properties/file_1584456174.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                         </ul>
                         <div class="heading-properties-2">
-                            <h3 style="margin-left: 10%;">Sapi Brahman <span class="rent" style="margin-left: 36%;">Dijual</h3>
+                        <?php foreach($tampil as $shopdetail) {
+
+                        ?>
+                            <h3 style="margin-left: 10%;"><?php echo $shopdetail->jenis_hewan ?><span class="rent" style="margin-left: 36%;">Dijual</h3>
                             <div class="price-location"></div>
                         </div>
                     </div>
@@ -80,9 +83,7 @@
                         <ul class="nav nav-tabs" id="carTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active show" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="false">Deskripsi</a>
-                                <?php foreach($tampil as $shopdetail) {
-
-                                ?>
+                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="6-tab" data-toggle="tab" href="#6" role="tab" aria-controls="6" aria-selected="true">Informasi</a>
@@ -105,9 +106,9 @@
 
                             <div class="tab-pane fade " id="6" role="tabpanel" aria-labelledby="6-tab">
                                 <div class="properties-amenities mb-30">
-                                    <h3 class="heading-2">Sapi Brahman</h3>
+                                    <h3 class="heading-2">Sapi Limusin</h3>
                                     
-                                                <p>Sapi brahman adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>
+                                                <p>Sapi Limusin adalah keturunan sapi Zebu atau Boss Indiscuss. Aslinya berasal dari India kemudia masuk ke Amerika pada tahun 1849 berkembang pesat di Amerika, Di AS, sapi Brahman dikembangkan untuk diseleksi dan ditingkatkan mutu genetiknya.[1] Setelah berhasil, jenis sapi ini diekspor ke berbagai negara. Dari AS, sapi Brahman menyebar ke Australia. Di Amerika terbentuk perkumpulan pembibit American Brahman Breeder Association, sedangkan di Australia terbentuk Australian Brahman Breeder Association.[2] Sapi Brahman masuk ke Indonesia sejak zaman penjajahan Belanda.</p>
                                                 <p>Ciri khas sapi Brahman adalah berpunuk besar dan berkulit longgar, gelambir dibawah leher sampai perut lebar dengan banyak lipatan-lipatan. Telinga panjang menggantung dan berujung runcing. Sapi ini adalah tipe sapi potong terbaik untuk dikembangkan.</p>
                                                 <?php } ?>
                                             

@@ -72,7 +72,7 @@
                         </ul>
                         <div class="heading-properties-2">
                         
-                            <h3 style="margin-left: 10%;"><?php echo $shopdetail->nama_hewan ?> <span class="rent" style="margin-left: 36%;">Dijual</h3>
+                            <h3 style="margin-left: 10%;"><?php echo $shopdetail->jenis_hewan ?> <span class="rent" style="margin-left: 36%;">Dijual</h3>
                             <div class="price-location"></div>
                         </div>
                     </div>

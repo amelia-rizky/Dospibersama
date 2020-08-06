@@ -57,48 +57,13 @@
                                                         <tr>
                                                             <td><strong>1</strong></td>
                                                             <td>001</td>
-                                                            <td class="text-center">King Zainal Aladin</td>
+                                                            <td class="text-center">Wahyu Ramadani</td>
                                                             <td class="text-center">Deposit</td>
                                                             <td><a href="<?php echo base_url('pembelian_penjual');?>" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
-                                                            <td>16-02-2020</td>
+                                                            <td>6 Agustus 2020</td>
                                                             <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
                                                         </tr>
-                                                        <tr>
-                                                            <td><strong>2</strong></td>
-                                                            <td>002</td>
-                                                            <td class="text-center">King Zainal Aladin</td>
-                                                            <td class="text-center">Deposit</td>
-                                                            <td><a href="<?php echo base_url('pembelian_penjual');?>" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
-                                                            <td>16-02-2020</td>
-                                                            <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><strong>3</strong></td>
-                                                            <td>003</td>
-                                                            <td class="text-center">King Zainal Aladin</td>
-                                                            <td class="text-center">Deposit</td>
-                                                            <td><a href="<?php echo base_url('pembelian_penjual');?>" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
-                                                            <td>16-02-2020</td>
-                                                            <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><strong>4</strong></td>
-                                                            <td>004</td>
-                                                            <td class="text-center">King Zainal Aladin</td>
-                                                            <td class="text-center">Deposit</td>
-                                                            <td><a href="<?php echo base_url('pembelian_penjual');?>" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
-                                                            <td>16-02-2020</td>
-                                                            <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><strong>5</strong></td>
-                                                            <td>005</td>
-                                                            <td class="text-center">King Zainal Aladin</td>
-                                                            <td class="text-center">Deposit</td>
-                                                            <td><a href="<?php echo base_url('pembelian_penjual');?>" type="button" class="btn  btn-outline-warning"><strong>Detail</strong></a></td>
-                                                            <td>16-02-2020</td>
-                                                            <td><a data-toggle="modal" data-target="#hapuslistfaktur" style="color: red; margin-left: 15%;"><i class="fa fa-trash fa-lg"></i></a></td>
-                                                        </tr>
+                                                      
                                                         </tbody>
                                                     </table>
                                                     <!-- Beli Start -->

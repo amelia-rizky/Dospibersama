@@ -26,7 +26,7 @@
                 </td>
                 <td class="title-container">
                     <input type="hidden" name="id_datahewan" value="<?php echo $rey->id_datahewan ?>">
-                    <h2><a href=""><?php echo $rey->nama_pemilik ?></a></h2>
+                    <h2><a href="<?php echo base_url('shop_list_penjual'); ?>"> Nama Pemilik = <?php echo $rey->nama_pemilik ?></a></h2>
                     <h5 class="d-none d-xl-block d-lg-block d-md-block"><i class="flaticon-pin"></i> <?php echo $rey->kabupaten?></h5>
                     <h6 class="table-property-price">Rp. <?php echo $rey->harga_hewan ?></h6>
                 </td>
@@ -196,7 +196,7 @@
   </div>
 </div>   
 
-
+<!--hapus-->
 
         <div class="modal fade" id="hapus<?php echo $rey->id_datahewan ?>" style="top: 15%;">
             <div class="modal-dialog modal-lg">
@@ -209,7 +209,7 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <center><h6>Apakah Anda yakin Untuk Menghapus Product ini ???</h6></center>
+                    <center><h6>Apakah Anda yakin Untuk Menghapus Product ini ??? <?php echo $rey->nama_pemilik ?></h6></center>
                 </div>
                 <!-- Modal footer -->
 
